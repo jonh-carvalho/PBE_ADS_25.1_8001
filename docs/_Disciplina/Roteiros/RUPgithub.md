@@ -2,7 +2,7 @@
 
 ### 🔹 **1. Estrutura Geral no GitHub**
 - **Repositório**: Crie um repositório GitHub para armazenar o código-fonte, documentação e artefatos do projeto.
-- **Projects (Kanban)**: Configure um **GitHub Project** para visualizar o progresso do projeto (pode ser um **Kanban** ou um **Tabela**).
+- **Projects (Kanban)**: Configure um **GitHub Project** para visualizar o progresso do projeto (pode ser um **Iteration** ou um **Tabela**).
 - **Milestones**: Crie **marcos (milestones)** para cada fase do RUP: Iniciação, Elaboração, Construção e Transição.
 - **Issues**: Use issues para tarefas detalhadas dentro de cada fase.
 
