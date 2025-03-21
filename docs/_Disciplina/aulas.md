@@ -2,8 +2,10 @@
 
 | Aula |Conteúdo |
 | ---------------------------- | ------------------------------------------------ |
-| __01__ - 14/02/25    | :material-check: Apresentação da Disciplina - Processo de Desenvolvimento <br> :material-check: Processo de Desenvolvimento - [Do Cascata ao Ágil](../assets/Aulas/Do%20Cascata%20ao%20Ágil.pdf) <br>  :material-check: [Configuração de Ambiente de Desenvolvimento](https://liveestacio-my.sharepoint.com/:w:/g/personal/00661711722_professores_ibmec_edu_br/EU2fCcJwgTFLvWNyOSUtNWABAykAdvtuiY2eOTitau10zA?e=NyuXZm) |
-
+| __01__ - 14/02/25    | :material-check: Apresentação da Disciplina - Processo de Desenvolvimento <br> :material-check: Processo de Desenvolvimento - [Do Cascata ao Ágil](../assets/Aulas/Do%20Cascata%20ao%20Ágil.pdf) <br>  |
+| __02__ - 21/02/25     | :material-check: [Configuração de Ambiente de Desenvolvimento](https://liveestacio-my.sharepoint.com/:w:/g/personal/00661711722_professores_ibmec_edu_br/EU2fCcJwgTFLvWNyOSUtNWABAykAdvtuiY2eOTitau10zA?e=NyuXZm) |
+| __03__ - 28/02/25     | Não houve aula pré-carnaval |
+| __04__ - 14/03/25     | :material-check:[RUP](../assets/Aulas/RUP.pdf)                                                                                                                                                                     |
 <!--
 | __02__ - 21/08/24     | :material-check: Processo de Desenvolvimento -[Do Cascata ao Ágil](../assets/Aulas/CascataAoAgil.docx)  |
 
