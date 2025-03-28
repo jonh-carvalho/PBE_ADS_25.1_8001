@@ -1,0 +1,26 @@
+@startuml FastDelivery_DiagramaClasses
+
+class Domicilio {
+  
+}
+
+class Caracteristicas {
+  
+}
+
+class Moradores {
+  
+}
+
+class Etnico {
+  
+}
+
+
+
+' Relacionamentos
+Domicilio  --  Caracteristicas
+Moradores  --  Etnico
+
+
+@enduml

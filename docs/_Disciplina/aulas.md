@@ -7,7 +7,7 @@
 | __03__ - 28/02/25     | Não houve aula pré-carnaval |
 | __04__ - 14/03/25     | :material-check:[RUP](../assets/Aulas/RUP.pdf)   |
 | __05__ - 21/03/25     | :material-check: Elaboração <br> :material-check:[Brainstorm](../assets/Aulas/O%20processo%20de brainstorm.pdf) e [Mapa Mental](../assets/Aulas/Mapa%20Mental.pdf) |
-| __06__ - 28/03/24     | :material-check: [Engenharia de Requisitos](..//assets/Aulas/Engenharia%20de%20Requisitos_Cap05.pdf)  <br> - [Análise OO e UML](../assets/Aulas/AnaliseOO&UML.pdf) <br> - - Diagrama de Casos de Uso <br> - [Classes](../assets/Aulas/Classes_Pacotes.pdf) |
+| __06__ - 28/03/24     | :material-check: [Engenharia de Requisitos](..//assets/Aulas/Engenharia%20de%20Requisitos_Cap05.pdf)  <br> - [Análise OO e UML](../assets/Aulas/AnaliseOO&UML.pdf) <br> - - Diagrama de Casos de Uso <br> - [Classes](../assets/Aulas/Classes_Pacotes.pdf) <br> - [Questionário de Básico do Censo 2022](https://censo2022.ibge.gov.br/np_download/censo2022/questionario_basico_completo_CD2022_atualizado_20220906.pdf)|
 <!--
 | __02__ - 21/08/24     | :material-check: Processo de Desenvolvimento -[Do Cascata ao Ágil](../assets/Aulas/CascataAoAgil.docx)  |
 | __03__ - 15/08/24     |  |
