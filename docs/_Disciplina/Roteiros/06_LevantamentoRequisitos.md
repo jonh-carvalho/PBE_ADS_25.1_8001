@@ -1,10 +1,10 @@
-### **06 - Exemplo de Levantamento de Requisitos e Caso de Uso**
+# 06 - Exemplo de Levantamento de Requisitos e Caso de Uso
 
 **Sistema:** Aplicativo de Delivery de Comida (*"FastDelivery"*)
 
 ---
 
-### **1. Identificação dos Stakeholders**
+## **1. Identificação dos Stakeholders**
 
 - **Clientes:** Pessoas que fazem pedidos.
 - **Restaurantes:** Estabelecimentos parceiros.
@@ -13,7 +13,7 @@
 
 ---
 
-### **2. Requisitos Funcionais (Exemplos)**
+## **2. Requisitos Funcionais (Exemplos)**
 
 | ID   | Descrição                                                                    | Prioridade |
 | ---- | ------------------------------------------------------------------------------ | ---------- |
@@ -21,7 +21,7 @@
 | RF02 | O restaurante deve poder atualizar seu cardápio no sistema.                   | Média     |
 | RF03 | O entregador deve receber notificações de novos pedidos.                     | Alta       |
 
-### **3. Requisitos Não Funcionais**
+## **3. Requisitos Não Funcionais**
 
 - **Performance:** O app deve carregar em menos de 3 segundos.
 - **Segurança:** Dados de pagamento criptografados (PCI Compliance).
@@ -29,9 +29,9 @@
 
 ---
 
-### **4. Exemplo de Caso de Uso**
+## **4. Exemplo de Caso de Uso**
 
-#### **UC01 - Realizar Pedido**
+### **UC01 - Realizar Pedido**
 
 - **Atores:** Cliente, Sistema.
 - **Pré-condição:** Cliente está logado e com localização ativa.
@@ -47,14 +47,14 @@
 
 ---
 
-### **5. Protótipo (Exemplo Simplificado)**
+## **5. Protótipo (Exemplo Simplificado)**
 
 - **Tela de Busca:** Barra de pesquisa + filtros (vegan, rápido, etc.).
 - **Carrinho:** Resumo dos itens + botão "Finalizar Pedido".
 
 ---
 
-### **6. Validação**
+## **6. Validação**
 
 - **Workshop com Restaurantes:** Confirmar se o fluxo de atualização de cardápio é viável.
 - **Teste A/B com Clientes:** Comparar duas versões do checkout para melhorar conversão.
@@ -62,7 +62,7 @@
 
 --
 
-### Diagrama de Casos de Uso
+## **7. Diagrama de Casos de Uso**
 
 Aqui está o diagrama de **Caso de Uso (UML)** para o cenário de **"Realizar Pedido"** no aplicativo de delivery, usando **PlantUML**:
 
@@ -165,7 +165,7 @@ end note
 
 ---
 
-### Protótipo
+## 8. Protótipo
 
 Aqui está o protótipo de **telas do aplicativo de delivery** usando **Salt (PlantUML)**, alinhado ao caso de uso anterior:
 
@@ -190,6 +190,7 @@ Aqui está o protótipo de **telas do aplicativo de delivery** usando **Salt (Pl
     [Ver Cardápio] | [Voltar]
   }
 }
+@endsalt
 
 @startsalt
 {
@@ -205,6 +206,7 @@ Aqui está o protótipo de **telas do aplicativo de delivery** usando **Salt (Pl
     [Adicionar ao Carrinho] | [Voltar]
   }
 }
+@endsalt
 
 @startsalt
 {
@@ -222,6 +224,7 @@ Aqui está o protótipo de **telas do aplicativo de delivery** usando **Salt (Pl
     [Continuar para Pagamento] | [Editar]
   }
 }
+@endsalt
 
 @startsalt
 {
@@ -237,6 +240,7 @@ Aqui está o protótipo de **telas do aplicativo de delivery** usando **Salt (Pl
     [Finalizar Pedido] | [Cancelar]
   }
 }
+@endsalt
 
 @startsalt
 {
@@ -251,6 +255,7 @@ Aqui está o protótipo de **telas do aplicativo de delivery** usando **Salt (Pl
     [Acompanhar Pedido] | [Voltar ao Início]
   }
 }
+@endsalt
 ```
 
 ---
@@ -301,9 +306,11 @@ Aqui está o protótipo de **telas do aplicativo de delivery** usando **Salt (Pl
 ---
 
 ### **Personalização**  
+
 - Para adicionar **mais telas** (ex.: login, acompanhamento de entrega):  
-  ```plantuml
-  @startsalt
+
+```plantuml
+@startsalt
   {
     {^ <b>Login</b> }
     {
@@ -314,11 +321,12 @@ Aqui está o protótipo de **telas do aplicativo de delivery** usando **Salt (Pl
       [Entrar] | [Criar Conta]
     }
   }
-  ```
+@endsalt
+```
 
-  ---
+---
 
-  ### Diagrama de Classe
+### Diagrama de Classe
 
   Aqui está o **diagrama de classes conceitual** para o sistema de delivery, representando os principais conceitos e seus relacionamentos:
 
@@ -439,7 +447,7 @@ Restaurante "1" --> "0..*" Item
 
 ### Adaptações Possíveis:
 1. **Adicionar Herança**:
-   ```plantuml
+ ```plantuml
    class Usuario {
      - id: String
      - nome: String
@@ -452,10 +460,10 @@ Restaurante "1" --> "0..*" Item
    }
    Usuario <|-- Cliente
    Usuario <|-- Entregador
-   ```
+ ```
 
 2. **Incluir Enums** (ex.: status do pedido):
-   ```plantuml
+ ```plantuml
    enum StatusPedido {
      EM_PREPARO
      EM_TRANSITO
@@ -464,7 +472,7 @@ Restaurante "1" --> "0..*" Item
    class Pedido {
      - status: StatusPedido
    }
-   ```
+ ```
 
 --- 
 
