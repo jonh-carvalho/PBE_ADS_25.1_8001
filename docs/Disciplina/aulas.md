@@ -1,4 +1,3 @@
-<<<<<<< HEAD:docs/Disciplina/aulas.md
 # Aulas
 
 | Aula |Conteúdo |
@@ -8,6 +7,18 @@
 | __03__ - 28/02/25     | Não houve aula pré-carnaval |
 | __04__ - 14/03/25     | :material-check:[RUP](../assets/Aulas/RUP.pdf)   |
 | __05__ - 21/03/25     | :material-check: Elaboração <br> :material-check:[Brainstorm](../assets/Aulas/O%20processo%20de brainstorm.pdf) e [Mapa Mental](../assets/Aulas/Mapa%20Mental.pdf) |
+| __06__ - 28/03/24     | :material-check: [Engenharia de Requisitos](..//assets/Aulas/Engenharia%20de%20Requisitos_Cap05.pdf)  <br> - [Análise OO e UML](../assets/Aulas/AnaliseOO&UML.pdf) <br> - Diagrama de Casos de Uso <br> - [Classes](../assets/Aulas/Classes_Pacotes.pdf) |
+| __07__ - 04/04/25     | :material-check: AP1    |
+| __08__ - 11/04/25     | :material-check: Python OO <br> - [Notebook](../Disciplina/Roteiros/__Construção/Poo/Poo.ipynb) <br> - [Conceito de OO](../Disciplina/Roteiros/__Construção/Poo/Conceitos-basicos-de-OO.pdf) <br> - [Python OO](../Disciplina/Roteiros/__Construção/Poo/Python-OO.pdf) <br> - Introdução ao Django  |
+| __09__ - 18/04/25     | :material-check: Feriado  |
+| __10__ - 25/04/25     | :material-check: Introdução SQL - Sqlite  |
+| __11__ - 02/05/25     | :material-check: Feriado |
+| __12__ - 09/05/25     | :material-check: App |
+| __13__ - 16/05/25     | :material-check: App |
+| __14__ - 23/05/25     | :material-check: App |
+| __15__ - 06/06/25     | :material-check: App |
+| __16__ - 13/06/25     | :material-check: AP2 - Apresentação Projeto |
+| __17__ - 27/06/25     | :material-check: AS |
 <!--
 | __02__ - 21/08/24     | :material-check: Processo de Desenvolvimento -[Do Cascata ao Ágil](../assets/Aulas/CascataAoAgil.docx)  |
 | __03__ - 15/08/24     |  |
