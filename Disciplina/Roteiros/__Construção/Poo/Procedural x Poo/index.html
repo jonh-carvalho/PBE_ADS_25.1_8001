@@ -2707,27 +2707,27 @@ print("A área do retângulo é:", resultado)</div>
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
 <pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">StdinNotImplementedError</span>                  Traceback (most recent call last)
-Cell <span class="ansi-green-intense-fg ansi-bold">In[1], line 18</span>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">StdinNotImplementedError</span>                  Traceback (most recent call last)
+<span class="ansi-cyan-fg">Cell</span><span class="ansi-cyan-fg"> </span><span class="ansi-green-fg">In[1]</span><span class="ansi-green-fg">, line 18</span>
 <span class="ansi-green-fg">     15</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> area
 <span class="ansi-green-fg">     17</span> <span style="color: rgb(95,135,135)"># Obtendo os dados do usuário</span>
-<span class="ansi-green-intense-fg ansi-bold">---&gt; 18</span> base <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">float</span>(<span class="ansi-yellow-bg" style="color: rgb(0,135,0)">input</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">"</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">Digite a base do retângulo: </span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">"</span><span class="ansi-yellow-bg">)</span>)
-<span class="ansi-green-fg">     19</span> altura <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">float</span>(<span style="color: rgb(0,135,0)">input</span>(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Digite a altura do retângulo: </span><span style="color: rgb(175,0,0)">"</span>))
+<span class="ansi-green-fg">---&gt; </span><span class="ansi-green-fg">18</span> base = <span style="color: rgb(0,135,0)">float</span>(<span class="ansi-yellow-bg" style="color: rgb(0,135,0)">input</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-fg ansi-yellow-bg">"</span><span class="ansi-yellow-fg ansi-yellow-bg">Digite a base do retângulo: </span><span class="ansi-yellow-fg ansi-yellow-bg">"</span><span class="ansi-yellow-bg">)</span>)
+<span class="ansi-green-fg">     19</span> altura = <span style="color: rgb(0,135,0)">float</span>(<span style="color: rgb(0,135,0)">input</span>(<span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">Digite a altura do retângulo: </span><span class="ansi-yellow-fg">"</span>))
 <span class="ansi-green-fg">     21</span> <span style="color: rgb(95,135,135)"># Calculando a área</span>
 
-File <span class="ansi-green-intense-fg ansi-bold">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\ipykernel\kernelbase.py:1281</span>, in <span class="ansi-cyan-fg">Kernel.raw_input</span><span class="ansi-blue-intense-fg ansi-bold">(self, prompt)</span>
-<span class="ansi-green-fg">   1279</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_allow_stdin:
-<span class="ansi-green-fg">   1280</span>     msg <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">raw_input was called, but this frontend does not support input requests.</span><span style="color: rgb(175,0,0)">"</span>
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 1281</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> StdinNotImplementedError(msg)
-<span class="ansi-green-fg">   1282</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_input_request(
+<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\ipykernel\kernelbase.py:1281</span>, in <span class="ansi-cyan-fg">Kernel.raw_input</span><span class="ansi-blue-fg">(self, prompt)</span>
+<span class="ansi-green-fg">   1279</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span style="color: rgb(0,135,0)">self</span>._allow_stdin:
+<span class="ansi-green-fg">   1280</span>     msg = <span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">raw_input was called, but this frontend does not support input requests.</span><span class="ansi-yellow-fg">"</span>
+<span class="ansi-green-fg">-&gt; </span><span class="ansi-green-fg">1281</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> StdinNotImplementedError(msg)
+<span class="ansi-green-fg">   1282</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span style="color: rgb(0,135,0)">self</span>._input_request(
 <span class="ansi-green-fg">   1283</span>     <span style="color: rgb(0,135,0)">str</span>(prompt),
-<span class="ansi-green-fg">   1284</span>     <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_parent_ident[<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">shell</span><span style="color: rgb(175,0,0)">"</span>],
-<span class="ansi-green-fg">   1285</span>     <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>get_parent(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">shell</span><span style="color: rgb(175,0,0)">"</span>),
-<span class="ansi-green-fg">   1286</span>     password<span style="color: rgb(98,98,98)">=</span><span class="ansi-bold" style="color: rgb(0,135,0)">False</span>,
+<span class="ansi-green-fg">   1284</span>     <span style="color: rgb(0,135,0)">self</span>._parent_ident[<span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">shell</span><span class="ansi-yellow-fg">"</span>],
+<span class="ansi-green-fg">   1285</span>     <span style="color: rgb(0,135,0)">self</span>.get_parent(<span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">shell</span><span class="ansi-yellow-fg">"</span>),
+<span class="ansi-green-fg">   1286</span>     password=<span class="ansi-bold" style="color: rgb(0,135,0)">False</span>,
 <span class="ansi-green-fg">   1287</span> )
 
-<span class="ansi-red-intense-fg ansi-bold">StdinNotImplementedError</span>: raw_input was called, but this frontend does not support input requests.</pre>
+<span class="ansi-red-fg">StdinNotImplementedError</span>: raw_input was called, but this frontend does not support input requests.</pre>
 </div>
 </div>
 </div>
@@ -2809,27 +2809,27 @@ print("A área do retângulo é:", resultado)</div>
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
 <pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">StdinNotImplementedError</span>                  Traceback (most recent call last)
-Cell <span class="ansi-green-intense-fg ansi-bold">In[2], line 12</span>
-<span class="ansi-green-fg">      9</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>base <span style="color: rgb(98,98,98)">*</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>altura
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">StdinNotImplementedError</span>                  Traceback (most recent call last)
+<span class="ansi-cyan-fg">Cell</span><span class="ansi-cyan-fg"> </span><span class="ansi-green-fg">In[2]</span><span class="ansi-green-fg">, line 12</span>
+<span class="ansi-green-fg">      9</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span style="color: rgb(0,135,0)">self</span>.base * <span style="color: rgb(0,135,0)">self</span>.altura
 <span class="ansi-green-fg">     11</span> <span style="color: rgb(95,135,135)"># Obtendo os dados do usuário</span>
-<span class="ansi-green-intense-fg ansi-bold">---&gt; 12</span> base <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">float</span>(<span class="ansi-yellow-bg" style="color: rgb(0,135,0)">input</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">"</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">Digite a base do retângulo: </span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">"</span><span class="ansi-yellow-bg">)</span>)
-<span class="ansi-green-fg">     13</span> altura <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">float</span>(<span style="color: rgb(0,135,0)">input</span>(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Digite a altura do retângulo: </span><span style="color: rgb(175,0,0)">"</span>))
+<span class="ansi-green-fg">---&gt; </span><span class="ansi-green-fg">12</span> base = <span style="color: rgb(0,135,0)">float</span>(<span class="ansi-yellow-bg" style="color: rgb(0,135,0)">input</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-fg ansi-yellow-bg">"</span><span class="ansi-yellow-fg ansi-yellow-bg">Digite a base do retângulo: </span><span class="ansi-yellow-fg ansi-yellow-bg">"</span><span class="ansi-yellow-bg">)</span>)
+<span class="ansi-green-fg">     13</span> altura = <span style="color: rgb(0,135,0)">float</span>(<span style="color: rgb(0,135,0)">input</span>(<span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">Digite a altura do retângulo: </span><span class="ansi-yellow-fg">"</span>))
 <span class="ansi-green-fg">     15</span> <span style="color: rgb(95,135,135)"># Criando um objeto Retangulo</span>
 
-File <span class="ansi-green-intense-fg ansi-bold">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\ipykernel\kernelbase.py:1281</span>, in <span class="ansi-cyan-fg">Kernel.raw_input</span><span class="ansi-blue-intense-fg ansi-bold">(self, prompt)</span>
-<span class="ansi-green-fg">   1279</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_allow_stdin:
-<span class="ansi-green-fg">   1280</span>     msg <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">raw_input was called, but this frontend does not support input requests.</span><span style="color: rgb(175,0,0)">"</span>
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 1281</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> StdinNotImplementedError(msg)
-<span class="ansi-green-fg">   1282</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_input_request(
+<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\ipykernel\kernelbase.py:1281</span>, in <span class="ansi-cyan-fg">Kernel.raw_input</span><span class="ansi-blue-fg">(self, prompt)</span>
+<span class="ansi-green-fg">   1279</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span style="color: rgb(0,135,0)">self</span>._allow_stdin:
+<span class="ansi-green-fg">   1280</span>     msg = <span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">raw_input was called, but this frontend does not support input requests.</span><span class="ansi-yellow-fg">"</span>
+<span class="ansi-green-fg">-&gt; </span><span class="ansi-green-fg">1281</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> StdinNotImplementedError(msg)
+<span class="ansi-green-fg">   1282</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span style="color: rgb(0,135,0)">self</span>._input_request(
 <span class="ansi-green-fg">   1283</span>     <span style="color: rgb(0,135,0)">str</span>(prompt),
-<span class="ansi-green-fg">   1284</span>     <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_parent_ident[<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">shell</span><span style="color: rgb(175,0,0)">"</span>],
-<span class="ansi-green-fg">   1285</span>     <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>get_parent(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">shell</span><span style="color: rgb(175,0,0)">"</span>),
-<span class="ansi-green-fg">   1286</span>     password<span style="color: rgb(98,98,98)">=</span><span class="ansi-bold" style="color: rgb(0,135,0)">False</span>,
+<span class="ansi-green-fg">   1284</span>     <span style="color: rgb(0,135,0)">self</span>._parent_ident[<span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">shell</span><span class="ansi-yellow-fg">"</span>],
+<span class="ansi-green-fg">   1285</span>     <span style="color: rgb(0,135,0)">self</span>.get_parent(<span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">shell</span><span class="ansi-yellow-fg">"</span>),
+<span class="ansi-green-fg">   1286</span>     password=<span class="ansi-bold" style="color: rgb(0,135,0)">False</span>,
 <span class="ansi-green-fg">   1287</span> )
 
-<span class="ansi-red-intense-fg ansi-bold">StdinNotImplementedError</span>: raw_input was called, but this frontend does not support input requests.</pre>
+<span class="ansi-red-fg">StdinNotImplementedError</span>: raw_input was called, but this frontend does not support input requests.</pre>
 </div>
 </div>
 </div>
@@ -3047,7 +3047,7 @@ if __name__ == '__main__':
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[<span class="ansi-green-intense-fg ansi-bold">INFO</span>   ] [Logger      ] Record log in C:\Users\00661711722\.kivy\logs\kivy_25-04-25_2.txt
+<pre>[<span class="ansi-green-intense-fg ansi-bold">INFO</span>   ] [Logger      ] Record log in C:\Users\00661711722\.kivy\logs\kivy_25-04-25_4.txt
 </pre>
 </div>
 </div>
@@ -3230,43 +3230,43 @@ if __name__ == '__main__':
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
 <pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">OSError</span>             Traceback (most recent call last)
-Cell <span class="ansi-green-intense-fg ansi-bold">In[4], line 40</span>
-<span class="ansi-green-fg">     37</span>             <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>resultado_label<span style="color: rgb(98,98,98)">.</span>text <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">Digite valores numéricos.</span><span style="color: rgb(175,0,0)">'</span>
-<span class="ansi-green-fg">     39</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,0,135)">__name__</span> <span style="color: rgb(98,98,98)">==</span> <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">__main__</span><span style="color: rgb(175,0,0)">'</span>:
-<span class="ansi-green-intense-fg ansi-bold">---&gt; 40</span>     <span class="ansi-yellow-bg">CalculadoraAreaApp</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">run</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-red-fg">-----------------------------------------------------------------------</span>
+<span class="ansi-red-fg">OSError</span>                               Traceback (most recent call last)
+<span class="ansi-cyan-fg">Cell</span><span class="ansi-cyan-fg"> </span><span class="ansi-green-fg">In[4]</span><span class="ansi-green-fg">, line 40</span>
+<span class="ansi-green-fg">     37</span>             <span style="color: rgb(0,135,0)">self</span>.resultado_label.text = <span class="ansi-yellow-fg">'</span><span class="ansi-yellow-fg">Digite valores numéricos.</span><span class="ansi-yellow-fg">'</span>
+<span class="ansi-green-fg">     39</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span class="ansi-blue-fg">__name__</span> == <span class="ansi-yellow-fg">'</span><span class="ansi-yellow-fg">__main__</span><span class="ansi-yellow-fg">'</span>:
+<span class="ansi-green-fg">---&gt; </span><span class="ansi-green-fg">40</span>     <span class="ansi-yellow-bg">CalculadoraAreaApp</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">run</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span>
 
-File <span class="ansi-green-intense-fg ansi-bold">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\kivy\app.py:955</span>, in <span class="ansi-cyan-fg">App.run</span><span class="ansi-blue-intense-fg ansi-bold">(self)</span>
-<span class="ansi-green-fg">    952</span> <span class="ansi-bold" style="color: rgb(0,135,0)">def</span><span style="color: rgb(188,188,188)"> </span><span style="color: rgb(0,0,255)">run</span>(<span style="color: rgb(0,135,0)">self</span>):
-<span class="ansi-green-fg">    953</span> <span style="color: rgb(188,188,188)">    </span><span style="color: rgb(175,0,0)">'''Launches the app in standalone mode.</span>
-<span class="ansi-green-fg">    954</span> <span style="color: rgb(175,0,0)">    '''</span>
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 955</span>     <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">_run_prepare</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\kivy\app.py:955</span>, in <span class="ansi-cyan-fg">App.run</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-fg">    952</span> <span class="ansi-bold" style="color: rgb(0,135,0)">def</span><span style="color: rgb(188,188,188)"> </span><span class="ansi-blue-fg">run</span>(<span style="color: rgb(0,135,0)">self</span>):
+<span class="ansi-green-fg">    953</span> <span style="color: rgb(188,188,188)">    </span><span class="ansi-yellow-fg">'''Launches the app in standalone mode.</span>
+<span class="ansi-green-fg">    954</span> <span class="ansi-yellow-fg">    '''</span>
+<span class="ansi-green-fg">--&gt; </span><span class="ansi-green-fg">955</span>     <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">_run_prepare</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span>
 <span class="ansi-green-fg">    956</span>     runTouchApp()
-<span class="ansi-green-fg">    957</span>     <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_stop()
+<span class="ansi-green-fg">    957</span>     <span style="color: rgb(0,135,0)">self</span>._stop()
 
-File <span class="ansi-green-intense-fg ansi-bold">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\kivy\app.py:924</span>, in <span class="ansi-cyan-fg">App._run_prepare</span><span class="ansi-blue-intense-fg ansi-bold">(self)</span>
-<span class="ansi-green-fg">    922</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>built:
-<span class="ansi-green-fg">    923</span>     <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>load_config()
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 924</span>     <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">load_kv</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">filename</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">kv_file</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">    925</span>     root <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>build()
+<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\kivy\app.py:924</span>, in <span class="ansi-cyan-fg">App._run_prepare</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-fg">    922</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span style="color: rgb(0,135,0)">self</span>.built:
+<span class="ansi-green-fg">    923</span>     <span style="color: rgb(0,135,0)">self</span>.load_config()
+<span class="ansi-green-fg">--&gt; </span><span class="ansi-green-fg">924</span>     <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">load_kv</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">filename</span><span class="ansi-yellow-bg">=</span><span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">kv_file</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-fg">    925</span>     root = <span style="color: rgb(0,135,0)">self</span>.build()
 <span class="ansi-green-fg">    926</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> root:
 
-File <span class="ansi-green-intense-fg ansi-bold">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\kivy\app.py:677</span>, in <span class="ansi-cyan-fg">App.load_kv</span><span class="ansi-blue-intense-fg ansi-bold">(self, filename)</span>
+<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\kivy\app.py:677</span>, in <span class="ansi-cyan-fg">App.load_kv</span><span class="ansi-blue-fg">(self, filename)</span>
 <span class="ansi-green-fg">    675</span> <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
 <span class="ansi-green-fg">    676</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">try</span>:
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 677</span>         default_kv_directory <span style="color: rgb(98,98,98)">=</span> dirname(<span class="ansi-yellow-bg">getfile</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg" style="color: rgb(0,0,135)">__class__</span><span class="ansi-yellow-bg">)</span>)
-<span class="ansi-green-fg">    678</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> default_kv_directory <span style="color: rgb(98,98,98)">==</span> <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">'</span>:
-<span class="ansi-green-fg">    679</span>             default_kv_directory <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">.</span><span style="color: rgb(175,0,0)">'</span>
+<span class="ansi-green-fg">--&gt; </span><span class="ansi-green-fg">677</span>         default_kv_directory = dirname(<span class="ansi-yellow-bg">getfile</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg">.</span><span class="ansi-blue-fg ansi-yellow-bg">__class__</span><span class="ansi-yellow-bg">)</span>)
+<span class="ansi-green-fg">    678</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> default_kv_directory == <span class="ansi-yellow-fg">'</span><span class="ansi-yellow-fg">'</span>:
+<span class="ansi-green-fg">    679</span>             default_kv_directory = <span class="ansi-yellow-fg">'</span><span class="ansi-yellow-fg">.</span><span class="ansi-yellow-fg">'</span>
 
-File <span class="ansi-green-intense-fg ansi-bold">~\AppData\Local\Programs\Python\Python313\Lib\inspect.py:931</span>, in <span class="ansi-cyan-fg">getfile</span><span class="ansi-blue-intense-fg ansi-bold">(object)</span>
-<span class="ansi-green-fg">    929</span>             <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> module<span style="color: rgb(98,98,98)">.</span><span style="color: rgb(0,0,135)">__file__</span>
-<span class="ansi-green-fg">    930</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">object</span><span style="color: rgb(98,98,98)">.</span><span style="color: rgb(0,0,135)">__module__</span> <span style="color: rgb(98,98,98)">==</span> <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">__main__</span><span style="color: rgb(175,0,0)">'</span>:
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 931</span>             <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> <span class="ansi-bold" style="color: rgb(215,95,95)">OSError</span>(<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">source code not available</span><span style="color: rgb(175,0,0)">'</span>)
-<span class="ansi-green-fg">    932</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> <span class="ansi-bold" style="color: rgb(215,95,95)">TypeError</span>(<span style="color: rgb(175,0,0)">'</span><span class="ansi-bold" style="color: rgb(175,95,135)">{!r}</span><span style="color: rgb(175,0,0)"> is a built-in class</span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(98,98,98)">.</span>format(<span style="color: rgb(0,135,0)">object</span>))
+<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">~\AppData\Local\Programs\Python\Python313\Lib\inspect.py:931</span>, in <span class="ansi-cyan-fg">getfile</span><span class="ansi-blue-fg">(object)</span>
+<span class="ansi-green-fg">    929</span>             <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> module.<span class="ansi-blue-fg">__file__</span>
+<span class="ansi-green-fg">    930</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">object</span>.<span class="ansi-blue-fg">__module__</span> == <span class="ansi-yellow-fg">'</span><span class="ansi-yellow-fg">__main__</span><span class="ansi-yellow-fg">'</span>:
+<span class="ansi-green-fg">--&gt; </span><span class="ansi-green-fg">931</span>             <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> <span class="ansi-bold" style="color: rgb(215,95,95)">OSError</span>(<span class="ansi-yellow-fg">'</span><span class="ansi-yellow-fg">source code not available</span><span class="ansi-yellow-fg">'</span>)
+<span class="ansi-green-fg">    932</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> <span class="ansi-bold" style="color: rgb(215,95,95)">TypeError</span>(<span class="ansi-yellow-fg">'</span><span class="ansi-bold" style="color: rgb(175,95,135)">{!r}</span><span class="ansi-yellow-fg"> is a built-in class</span><span class="ansi-yellow-fg">'</span>.format(<span style="color: rgb(0,135,0)">object</span>))
 <span class="ansi-green-fg">    933</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> ismethod(<span style="color: rgb(0,135,0)">object</span>):
 
-<span class="ansi-red-intense-fg ansi-bold">OSError</span>: source code not available</pre>
+<span class="ansi-red-fg">OSError</span>: source code not available</pre>
 </div>
 </div>
 </div>
@@ -3368,33 +3368,33 @@ print("Fim do jogo!")</div>
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
 <pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">StdinNotImplementedError</span>                  Traceback (most recent call last)
-Cell <span class="ansi-green-intense-fg ansi-bold">In[5], line 16</span>
-<span class="ansi-green-fg">     13</span>     <span style="color: rgb(0,135,0)">print</span>(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Você causou 10 de dano ao inimigo!</span><span style="color: rgb(175,0,0)">"</span>)
+<span class="ansi-red-fg">-----------------------------------------------------------------------</span>
+<span class="ansi-red-fg">StdinNotImplementedError</span>              Traceback (most recent call last)
+<span class="ansi-cyan-fg">Cell</span><span class="ansi-cyan-fg"> </span><span class="ansi-green-fg">In[5]</span><span class="ansi-green-fg">, line 16</span>
+<span class="ansi-green-fg">     13</span>     <span style="color: rgb(0,135,0)">print</span>(<span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">Você causou 10 de dano ao inimigo!</span><span class="ansi-yellow-fg">"</span>)
 <span class="ansi-green-fg">     15</span> <span style="color: rgb(95,135,135)"># Criar o personagem</span>
-<span class="ansi-green-intense-fg ansi-bold">---&gt; 16</span> nome, classe, vida, mana <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">criar_personagem</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-fg">---&gt; </span><span class="ansi-green-fg">16</span> nome, classe, vida, mana = <span class="ansi-yellow-bg">criar_personagem</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span>
 <span class="ansi-green-fg">     18</span> <span style="color: rgb(95,135,135)"># Combate</span>
-<span class="ansi-green-fg">     19</span> vida_inimigo <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(98,98,98)">100</span>
+<span class="ansi-green-fg">     19</span> vida_inimigo = <span class="ansi-green-fg">100</span>
 
-Cell <span class="ansi-green-intense-fg ansi-bold">In[5], line 4</span>, in <span class="ansi-cyan-fg">criar_personagem</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
-<span class="ansi-green-fg">      3</span> <span class="ansi-bold" style="color: rgb(0,135,0)">def</span><span style="color: rgb(188,188,188)"> </span><span style="color: rgb(0,0,255)">criar_personagem</span>():
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 4</span>     nome <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">input</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">"</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">Digite o nome do seu personagem: </span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">"</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">      5</span>     classe <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">input</span>(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Digite a classe do seu personagem: </span><span style="color: rgb(175,0,0)">"</span>)
-<span class="ansi-green-fg">      6</span>     vida <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(98,98,98)">100</span>
+<span class="ansi-cyan-fg">Cell</span><span class="ansi-cyan-fg"> </span><span class="ansi-green-fg">In[5]</span><span class="ansi-green-fg">, line 4</span>, in <span class="ansi-cyan-fg">criar_personagem</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">      3</span> <span class="ansi-bold" style="color: rgb(0,135,0)">def</span><span style="color: rgb(188,188,188)"> </span><span class="ansi-blue-fg">criar_personagem</span>():
+<span class="ansi-green-fg">----&gt; </span><span class="ansi-green-fg">4</span>     nome = <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">input</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-fg ansi-yellow-bg">"</span><span class="ansi-yellow-fg ansi-yellow-bg">Digite o nome do seu personagem: </span><span class="ansi-yellow-fg ansi-yellow-bg">"</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-fg">      5</span>     classe = <span style="color: rgb(0,135,0)">input</span>(<span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">Digite a classe do seu personagem: </span><span class="ansi-yellow-fg">"</span>)
+<span class="ansi-green-fg">      6</span>     vida = <span class="ansi-green-fg">100</span>
 
-File <span class="ansi-green-intense-fg ansi-bold">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\ipykernel\kernelbase.py:1281</span>, in <span class="ansi-cyan-fg">Kernel.raw_input</span><span class="ansi-blue-intense-fg ansi-bold">(self, prompt)</span>
-<span class="ansi-green-fg">   1279</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_allow_stdin:
-<span class="ansi-green-fg">   1280</span>     msg <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">raw_input was called, but this frontend does not support input requests.</span><span style="color: rgb(175,0,0)">"</span>
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 1281</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> StdinNotImplementedError(msg)
-<span class="ansi-green-fg">   1282</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_input_request(
+<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\ipykernel\kernelbase.py:1281</span>, in <span class="ansi-cyan-fg">Kernel.raw_input</span><span class="ansi-blue-fg">(self, prompt)</span>
+<span class="ansi-green-fg">   1279</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span style="color: rgb(0,135,0)">self</span>._allow_stdin:
+<span class="ansi-green-fg">   1280</span>     msg = <span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">raw_input was called, but this frontend does not support input requests.</span><span class="ansi-yellow-fg">"</span>
+<span class="ansi-green-fg">-&gt; </span><span class="ansi-green-fg">1281</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> StdinNotImplementedError(msg)
+<span class="ansi-green-fg">   1282</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span style="color: rgb(0,135,0)">self</span>._input_request(
 <span class="ansi-green-fg">   1283</span>     <span style="color: rgb(0,135,0)">str</span>(prompt),
-<span class="ansi-green-fg">   1284</span>     <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_parent_ident[<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">shell</span><span style="color: rgb(175,0,0)">"</span>],
-<span class="ansi-green-fg">   1285</span>     <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>get_parent(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">shell</span><span style="color: rgb(175,0,0)">"</span>),
-<span class="ansi-green-fg">   1286</span>     password<span style="color: rgb(98,98,98)">=</span><span class="ansi-bold" style="color: rgb(0,135,0)">False</span>,
+<span class="ansi-green-fg">   1284</span>     <span style="color: rgb(0,135,0)">self</span>._parent_ident[<span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">shell</span><span class="ansi-yellow-fg">"</span>],
+<span class="ansi-green-fg">   1285</span>     <span style="color: rgb(0,135,0)">self</span>.get_parent(<span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">shell</span><span class="ansi-yellow-fg">"</span>),
+<span class="ansi-green-fg">   1286</span>     password=<span class="ansi-bold" style="color: rgb(0,135,0)">False</span>,
 <span class="ansi-green-fg">   1287</span> )
 
-<span class="ansi-red-intense-fg ansi-bold">StdinNotImplementedError</span>: raw_input was called, but this frontend does not support input requests.</pre>
+<span class="ansi-red-fg">StdinNotImplementedError</span>: raw_input was called, but this frontend does not support input requests.</pre>
 </div>
 </div>
 </div>
@@ -3484,27 +3484,27 @@ print("Fim do jogo!")</div>
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
 <pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">StdinNotImplementedError</span>                  Traceback (most recent call last)
-Cell <span class="ansi-green-intense-fg ansi-bold">In[6], line 21</span>
+<span class="ansi-red-fg">-----------------------------------------------------------------------</span>
+<span class="ansi-red-fg">StdinNotImplementedError</span>              Traceback (most recent call last)
+<span class="ansi-cyan-fg">Cell</span><span class="ansi-cyan-fg"> </span><span class="ansi-green-fg">In[6]</span><span class="ansi-green-fg">, line 21</span>
 <span class="ansi-green-fg">     19</span> <span style="color: rgb(95,135,135)"># Combate</span>
-<span class="ansi-green-fg">     20</span> <span class="ansi-bold" style="color: rgb(0,135,0)">while</span> jogador<span style="color: rgb(98,98,98)">.</span>vida <span style="color: rgb(98,98,98)">&gt;</span> <span style="color: rgb(98,98,98)">0</span> <span class="ansi-bold" style="color: rgb(175,0,255)">and</span> inimigo<span style="color: rgb(98,98,98)">.</span>vida <span style="color: rgb(98,98,98)">&gt;</span> <span style="color: rgb(98,98,98)">0</span>:
-<span class="ansi-green-intense-fg ansi-bold">---&gt; 21</span>     acao <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">input</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">"</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">O que você deseja fazer? (atacar/defender): </span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">"</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">     22</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> acao <span style="color: rgb(98,98,98)">==</span> <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">atacar</span><span style="color: rgb(175,0,0)">"</span>:
-<span class="ansi-green-fg">     23</span>         jogador<span style="color: rgb(98,98,98)">.</span>atacar(inimigo)
+<span class="ansi-green-fg">     20</span> <span class="ansi-bold" style="color: rgb(0,135,0)">while</span> jogador.vida &gt; <span class="ansi-green-fg">0</span> <span class="ansi-bold" style="color: rgb(175,0,255)">and</span> inimigo.vida &gt; <span class="ansi-green-fg">0</span>:
+<span class="ansi-green-fg">---&gt; </span><span class="ansi-green-fg">21</span>     acao = <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">input</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-fg ansi-yellow-bg">"</span><span class="ansi-yellow-fg ansi-yellow-bg">O que você deseja fazer? (atacar/defender): </span><span class="ansi-yellow-fg ansi-yellow-bg">"</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-fg">     22</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> acao == <span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">atacar</span><span class="ansi-yellow-fg">"</span>:
+<span class="ansi-green-fg">     23</span>         jogador.atacar(inimigo)
 
-File <span class="ansi-green-intense-fg ansi-bold">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\ipykernel\kernelbase.py:1281</span>, in <span class="ansi-cyan-fg">Kernel.raw_input</span><span class="ansi-blue-intense-fg ansi-bold">(self, prompt)</span>
-<span class="ansi-green-fg">   1279</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_allow_stdin:
-<span class="ansi-green-fg">   1280</span>     msg <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">raw_input was called, but this frontend does not support input requests.</span><span style="color: rgb(175,0,0)">"</span>
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 1281</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> StdinNotImplementedError(msg)
-<span class="ansi-green-fg">   1282</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_input_request(
+<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\ipykernel\kernelbase.py:1281</span>, in <span class="ansi-cyan-fg">Kernel.raw_input</span><span class="ansi-blue-fg">(self, prompt)</span>
+<span class="ansi-green-fg">   1279</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span style="color: rgb(0,135,0)">self</span>._allow_stdin:
+<span class="ansi-green-fg">   1280</span>     msg = <span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">raw_input was called, but this frontend does not support input requests.</span><span class="ansi-yellow-fg">"</span>
+<span class="ansi-green-fg">-&gt; </span><span class="ansi-green-fg">1281</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> StdinNotImplementedError(msg)
+<span class="ansi-green-fg">   1282</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span style="color: rgb(0,135,0)">self</span>._input_request(
 <span class="ansi-green-fg">   1283</span>     <span style="color: rgb(0,135,0)">str</span>(prompt),
-<span class="ansi-green-fg">   1284</span>     <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_parent_ident[<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">shell</span><span style="color: rgb(175,0,0)">"</span>],
-<span class="ansi-green-fg">   1285</span>     <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>get_parent(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">shell</span><span style="color: rgb(175,0,0)">"</span>),
-<span class="ansi-green-fg">   1286</span>     password<span style="color: rgb(98,98,98)">=</span><span class="ansi-bold" style="color: rgb(0,135,0)">False</span>,
+<span class="ansi-green-fg">   1284</span>     <span style="color: rgb(0,135,0)">self</span>._parent_ident[<span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">shell</span><span class="ansi-yellow-fg">"</span>],
+<span class="ansi-green-fg">   1285</span>     <span style="color: rgb(0,135,0)">self</span>.get_parent(<span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">shell</span><span class="ansi-yellow-fg">"</span>),
+<span class="ansi-green-fg">   1286</span>     password=<span class="ansi-bold" style="color: rgb(0,135,0)">False</span>,
 <span class="ansi-green-fg">   1287</span> )
 
-<span class="ansi-red-intense-fg ansi-bold">StdinNotImplementedError</span>: raw_input was called, but this frontend does not support input requests.</pre>
+<span class="ansi-red-fg">StdinNotImplementedError</span>: raw_input was called, but this frontend does not support input requests.</pre>
 </div>
 </div>
 </div>
