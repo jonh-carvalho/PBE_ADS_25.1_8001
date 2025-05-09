@@ -18,6 +18,6 @@ class Content(models.Model):
     is_public = models.BooleanField(default=True)
     status = models.CharField(max_length=20, default='published')
     creator = models.ForeignKey(User, related_name='contents', on_delete=models.CASCADE)
-
+  
     def __str__(self):
         return self.title
