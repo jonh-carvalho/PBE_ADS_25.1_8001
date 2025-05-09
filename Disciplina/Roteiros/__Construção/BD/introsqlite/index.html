@@ -1001,11 +1001,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Django/Streaming/01_Projeto_Streaming/" class="md-nav__link">
+      <a href="../../Django/Streaming/00_Projeto_Streaming/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    01 - Projeto Streaming
+    Projeto Streaming
     
   </span>
   
@@ -1049,7 +1049,7 @@
         
   
   <span class="md-ellipsis">
-    02 - Modelagem de Dados
+    03 - Modelagem de Dados
     
   </span>
   
@@ -1071,7 +1071,7 @@
         
   
   <span class="md-ellipsis">
-    03 - Rest Streaming
+    04 - Rest Streaming
     
   </span>
   
@@ -2966,15 +2966,14 @@ CREATE TABLE CLIENTES (
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre> * sqlite:///contatos.db
-(sqlite3.OperationalError) table CLIENTES already exists
-[SQL: CREATE TABLE CLIENTES (
-    CLIENTE_ID INTEGER PRIMARY KEY,
-    NOME TEXT NOT NULL,
-    EMAIL TEXT NOT NULL UNIQUE,
-    TELEFONE TEXT NOT NULL UNIQUE
-);]
-(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Done.
 </pre>
+</div>
+</div>
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>[]</pre>
 </div>
 </div>
 </div>
@@ -3028,15 +3027,14 @@ VALUES
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre> * sqlite:///contatos.db
-(sqlite3.IntegrityError) UNIQUE constraint failed: CLIENTES.TELEFONE
-[SQL: INSERT INTO CLIENTES (NOME, EMAIL, TELEFONE) 
-VALUES
-    ('Leonardo' , 'leonardo@gmail.com', '9999-9999' ),
-    ('Rafael' , 'rafael@gmail.com', '9889-8998' ),
-    ('Michelangelo' , 'michelangelo@gmail.com', '9997-7999' ),
-    ('Donatello' , 'donatello@gmail.com', '9777-7779' );]
-(Background on this error at: https://sqlalche.me/e/20/gkpj)
+4 rows affected.
 </pre>
+</div>
+</div>
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>[]</pre>
 </div>
 </div>
 </div>
@@ -3048,7 +3046,7 @@ VALUES
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-5">
@@ -3088,46 +3086,47 @@ Done.
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
 <pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">KeyError</span>                                  Traceback (most recent call last)
-<span class="ansi-cyan-fg">Cell</span><span class="ansi-cyan-fg"> </span><span class="ansi-green-fg">In[5]</span><span class="ansi-green-fg">, line 1</span>
-<span class="ansi-green-fg">----&gt; </span><span class="ansi-green-fg">1</span> <span class="ansi-yellow-bg">get_ipython</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">run_cell_magic</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-fg ansi-yellow-bg">sql</span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-bg ansi-bold" style="color: rgb(175,95,0)">\n</span><span class="ansi-yellow-fg ansi-yellow-bg">SELECT * FROM CLIENTES</span><span class="ansi-yellow-bg ansi-bold" style="color: rgb(175,95,0)">\n</span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">KeyError</span>                                  Traceback (most recent call last)
+Cell <span class="ansi-green-intense-fg ansi-bold">In[6], line 1</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span> <span class="ansi-yellow-bg">get_ipython</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">run_cell_magic</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">'</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">sql</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">'</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">'</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">'</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">'</span><span class="ansi-yellow-bg ansi-bold" style="color: rgb(175,95,0)">\n</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">SELECT * FROM CLIENTES</span><span class="ansi-yellow-bg ansi-bold" style="color: rgb(175,95,0)">\n</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">'</span><span class="ansi-yellow-bg">)</span>
 
-<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\IPython\core\interactiveshell.py:2547</span>, in <span class="ansi-cyan-fg">InteractiveShell.run_cell_magic</span><span class="ansi-blue-fg">(self, magic_name, line, cell)</span>
-<span class="ansi-green-fg">   2545</span> <span class="ansi-bold" style="color: rgb(0,135,0)">with</span> <span style="color: rgb(0,135,0)">self</span>.builtin_trap:
-<span class="ansi-green-fg">   2546</span>     args = (magic_arg_s, cell)
-<span class="ansi-green-fg">-&gt; </span><span class="ansi-green-fg">2547</span>     result = <span class="ansi-yellow-bg">fn</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">args</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">kwargs</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">   2549</span> <span style="color: rgb(95,135,135)"># The code below prevents the output from being displayed</span>
-<span class="ansi-green-fg">   2550</span> <span style="color: rgb(95,135,135)"># when using magics with decorator @output_can_be_silenced</span>
-<span class="ansi-green-fg">   2551</span> <span style="color: rgb(95,135,135)"># when the last Python token in the expression is a ';'.</span>
-<span class="ansi-green-fg">   2552</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">getattr</span>(fn, magic.MAGIC_OUTPUT_CAN_BE_SILENCED, <span class="ansi-bold" style="color: rgb(0,135,0)">False</span>):
+File <span class="ansi-green-intense-fg ansi-bold">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\IPython\core\interactiveshell.py:2543</span>, in <span class="ansi-cyan-fg">InteractiveShell.run_cell_magic</span><span class="ansi-blue-intense-fg ansi-bold">(self, magic_name, line, cell)</span>
+<span class="ansi-green-fg">   2541</span> <span class="ansi-bold" style="color: rgb(0,135,0)">with</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>builtin_trap:
+<span class="ansi-green-fg">   2542</span>     args <span style="color: rgb(98,98,98)">=</span> (magic_arg_s, cell)
+<span class="ansi-green-intense-fg ansi-bold">-&gt; 2543</span>     result <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">fn</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">*</span><span class="ansi-yellow-bg">args</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">*</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">*</span><span class="ansi-yellow-bg">kwargs</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-fg">   2545</span> <span style="color: rgb(95,135,135)"># The code below prevents the output from being displayed</span>
+<span class="ansi-green-fg">   2546</span> <span style="color: rgb(95,135,135)"># when using magics with decorator @output_can_be_silenced</span>
+<span class="ansi-green-fg">   2547</span> <span style="color: rgb(95,135,135)"># when the last Python token in the expression is a ';'.</span>
+<span class="ansi-green-fg">   2548</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">getattr</span>(fn, magic<span style="color: rgb(98,98,98)">.</span>MAGIC_OUTPUT_CAN_BE_SILENCED, <span class="ansi-bold" style="color: rgb(0,135,0)">False</span>):
 
-<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\sql\magic.py:219</span>, in <span class="ansi-cyan-fg">SqlMagic.execute</span><span class="ansi-blue-fg">(self, line, cell, local_ns)</span>
+File <span class="ansi-green-intense-fg ansi-bold">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\sql\magic.py:219</span>, in <span class="ansi-cyan-fg">SqlMagic.execute</span><span class="ansi-blue-intense-fg ansi-bold">(self, line, cell, local_ns)</span>
 <span class="ansi-green-fg">    216</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span>
 <span class="ansi-green-fg">    218</span> <span class="ansi-bold" style="color: rgb(0,135,0)">try</span>:
-<span class="ansi-green-fg">--&gt; </span><span class="ansi-green-fg">219</span>     result = <span class="ansi-yellow-bg">sql</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">run</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">run</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">conn</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">parsed</span><span class="ansi-yellow-bg">[</span><span class="ansi-yellow-fg ansi-yellow-bg">"</span><span class="ansi-yellow-fg ansi-yellow-bg">sql</span><span class="ansi-yellow-fg ansi-yellow-bg">"</span><span class="ansi-yellow-bg">]</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">user_ns</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 219</span>     result <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">sql</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">run</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">run</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">conn</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">parsed</span><span class="ansi-yellow-bg">[</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">"</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">sql</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">"</span><span class="ansi-yellow-bg">]</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">user_ns</span><span class="ansi-yellow-bg">)</span>
 <span class="ansi-green-fg">    221</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> (
 <span class="ansi-green-fg">    222</span>         result <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>
 <span class="ansi-green-fg">    223</span>         <span class="ansi-bold" style="color: rgb(175,0,255)">and</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span style="color: rgb(0,135,0)">isinstance</span>(result, <span style="color: rgb(0,135,0)">str</span>)
-<span class="ansi-green-fg">   (...)</span><span class="ansi-green-fg">    226</span>         <span style="color: rgb(95,135,135)"># Instead of returning values, set variables directly in the</span>
+<span class="ansi-green-intense-fg ansi-bold">   (...)</span>
+<span class="ansi-green-fg">    226</span>         <span style="color: rgb(95,135,135)"># Instead of returning values, set variables directly in the</span>
 <span class="ansi-green-fg">    227</span>         <span style="color: rgb(95,135,135)"># user's namespace. Variable names given by column names</span>
-<span class="ansi-green-fg">    229</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">self</span>.autopandas:
+<span class="ansi-green-fg">    229</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>autopandas:
 
-<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\sql\run.py:374</span>, in <span class="ansi-cyan-fg">run</span><span class="ansi-blue-fg">(conn, sql, config, user_namespace)</span>
-<span class="ansi-green-fg">    372</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> result <span class="ansi-bold" style="color: rgb(175,0,255)">and</span> config.feedback:
-<span class="ansi-green-fg">    373</span>         <span style="color: rgb(0,135,0)">print</span>(interpret_rowcount(result.rowcount))
-<span class="ansi-green-fg">--&gt; </span><span class="ansi-green-fg">374</span> resultset = <span class="ansi-yellow-bg">ResultSet</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">result</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">config</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">    375</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> config.autopandas:
-<span class="ansi-green-fg">    376</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> resultset.DataFrame()
+File <span class="ansi-green-intense-fg ansi-bold">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\sql\run.py:374</span>, in <span class="ansi-cyan-fg">run</span><span class="ansi-blue-intense-fg ansi-bold">(conn, sql, config, user_namespace)</span>
+<span class="ansi-green-fg">    372</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> result <span class="ansi-bold" style="color: rgb(175,0,255)">and</span> config<span style="color: rgb(98,98,98)">.</span>feedback:
+<span class="ansi-green-fg">    373</span>         <span style="color: rgb(0,135,0)">print</span>(interpret_rowcount(result<span style="color: rgb(98,98,98)">.</span>rowcount))
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 374</span> resultset <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">ResultSet</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">result</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">config</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-fg">    375</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> config<span style="color: rgb(98,98,98)">.</span>autopandas:
+<span class="ansi-green-fg">    376</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> resultset<span style="color: rgb(98,98,98)">.</span>DataFrame()
 
-<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\sql\run.py:116</span>, in <span class="ansi-cyan-fg">ResultSet.__init__</span><span class="ansi-blue-fg">(self, sqlaproxy, config)</span>
-<span class="ansi-green-fg">    114</span>         <span style="color: rgb(0,135,0)">list</span>.<span class="ansi-blue-fg">__init__</span>(<span style="color: rgb(0,135,0)">self</span>, sqlaproxy.fetchall())
-<span class="ansi-green-fg">    115</span>     <span style="color: rgb(0,135,0)">self</span>.field_names = unduplicate_field_names(<span style="color: rgb(0,135,0)">self</span>.keys)
-<span class="ansi-green-fg">--&gt; </span><span class="ansi-green-fg">116</span>     <span style="color: rgb(0,135,0)">self</span>.pretty = PrettyTable(<span style="color: rgb(0,135,0)">self</span>.field_names, style=<span class="ansi-yellow-bg">prettytable</span><span class="ansi-yellow-bg">.</span><span class="ansi-blue-fg ansi-yellow-bg">__dict__</span><span class="ansi-yellow-bg">[</span><span class="ansi-yellow-bg">config</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">style</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">upper</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg">]</span>)
+File <span class="ansi-green-intense-fg ansi-bold">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\sql\run.py:116</span>, in <span class="ansi-cyan-fg">ResultSet.__init__</span><span class="ansi-blue-intense-fg ansi-bold">(self, sqlaproxy, config)</span>
+<span class="ansi-green-fg">    114</span>         <span style="color: rgb(0,135,0)">list</span><span style="color: rgb(98,98,98)">.</span><span style="color: rgb(0,0,255)">__init__</span>(<span style="color: rgb(0,135,0)">self</span>, sqlaproxy<span style="color: rgb(98,98,98)">.</span>fetchall())
+<span class="ansi-green-fg">    115</span>     <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>field_names <span style="color: rgb(98,98,98)">=</span> unduplicate_field_names(<span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>keys)
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 116</span>     <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>pretty <span style="color: rgb(98,98,98)">=</span> PrettyTable(<span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>field_names, style<span style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">prettytable</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg" style="color: rgb(0,0,135)">__dict__</span><span class="ansi-yellow-bg">[</span><span class="ansi-yellow-bg">config</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">style</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">upper</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg">]</span>)
 <span class="ansi-green-fg">    117</span> <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
-<span class="ansi-green-fg">    118</span>     <span style="color: rgb(0,135,0)">list</span>.<span class="ansi-blue-fg">__init__</span>(<span style="color: rgb(0,135,0)">self</span>, [])
+<span class="ansi-green-fg">    118</span>     <span style="color: rgb(0,135,0)">list</span><span style="color: rgb(98,98,98)">.</span><span style="color: rgb(0,0,255)">__init__</span>(<span style="color: rgb(0,135,0)">self</span>, [])
 
-<span class="ansi-red-fg">KeyError</span>: 'DEFAULT'</pre>
+<span class="ansi-red-intense-fg ansi-bold">KeyError</span>: 'DEFAULT'</pre>
 </div>
 </div>
 </div>
@@ -3139,7 +3138,7 @@ Done.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-6">
@@ -3175,50 +3174,27 @@ Done.
 </pre>
 </div>
 </div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">KeyError</span>                                  Traceback (most recent call last)
-<span class="ansi-cyan-fg">Cell</span><span class="ansi-cyan-fg"> </span><span class="ansi-green-fg">In[6]</span><span class="ansi-green-fg">, line 1</span>
-<span class="ansi-green-fg">----&gt; </span><span class="ansi-green-fg">1</span> <span class="ansi-yellow-bg">get_ipython</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">run_cell_magic</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-fg ansi-yellow-bg">sql</span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-bg ansi-bold" style="color: rgb(175,95,0)">\n</span><span class="ansi-yellow-fg ansi-yellow-bg">SELECT * FROM CLIENTES WHERE EMAIL = </span><span class="ansi-yellow-fg ansi-yellow-bg">"</span><span class="ansi-yellow-fg ansi-yellow-bg">leonardo@gmail.com</span><span class="ansi-yellow-fg ansi-yellow-bg">"</span><span class="ansi-yellow-bg ansi-bold" style="color: rgb(175,95,0)">\n</span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-bg">)</span>
-
-<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\IPython\core\interactiveshell.py:2547</span>, in <span class="ansi-cyan-fg">InteractiveShell.run_cell_magic</span><span class="ansi-blue-fg">(self, magic_name, line, cell)</span>
-<span class="ansi-green-fg">   2545</span> <span class="ansi-bold" style="color: rgb(0,135,0)">with</span> <span style="color: rgb(0,135,0)">self</span>.builtin_trap:
-<span class="ansi-green-fg">   2546</span>     args = (magic_arg_s, cell)
-<span class="ansi-green-fg">-&gt; </span><span class="ansi-green-fg">2547</span>     result = <span class="ansi-yellow-bg">fn</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">args</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">kwargs</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">   2549</span> <span style="color: rgb(95,135,135)"># The code below prevents the output from being displayed</span>
-<span class="ansi-green-fg">   2550</span> <span style="color: rgb(95,135,135)"># when using magics with decorator @output_can_be_silenced</span>
-<span class="ansi-green-fg">   2551</span> <span style="color: rgb(95,135,135)"># when the last Python token in the expression is a ';'.</span>
-<span class="ansi-green-fg">   2552</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">getattr</span>(fn, magic.MAGIC_OUTPUT_CAN_BE_SILENCED, <span class="ansi-bold" style="color: rgb(0,135,0)">False</span>):
-
-<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\sql\magic.py:219</span>, in <span class="ansi-cyan-fg">SqlMagic.execute</span><span class="ansi-blue-fg">(self, line, cell, local_ns)</span>
-<span class="ansi-green-fg">    216</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span>
-<span class="ansi-green-fg">    218</span> <span class="ansi-bold" style="color: rgb(0,135,0)">try</span>:
-<span class="ansi-green-fg">--&gt; </span><span class="ansi-green-fg">219</span>     result = <span class="ansi-yellow-bg">sql</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">run</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">run</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">conn</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">parsed</span><span class="ansi-yellow-bg">[</span><span class="ansi-yellow-fg ansi-yellow-bg">"</span><span class="ansi-yellow-fg ansi-yellow-bg">sql</span><span class="ansi-yellow-fg ansi-yellow-bg">"</span><span class="ansi-yellow-bg">]</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">user_ns</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">    221</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> (
-<span class="ansi-green-fg">    222</span>         result <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>
-<span class="ansi-green-fg">    223</span>         <span class="ansi-bold" style="color: rgb(175,0,255)">and</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span style="color: rgb(0,135,0)">isinstance</span>(result, <span style="color: rgb(0,135,0)">str</span>)
-<span class="ansi-green-fg">   (...)</span><span class="ansi-green-fg">    226</span>         <span style="color: rgb(95,135,135)"># Instead of returning values, set variables directly in the</span>
-<span class="ansi-green-fg">    227</span>         <span style="color: rgb(95,135,135)"># user's namespace. Variable names given by column names</span>
-<span class="ansi-green-fg">    229</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">self</span>.autopandas:
-
-<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\sql\run.py:374</span>, in <span class="ansi-cyan-fg">run</span><span class="ansi-blue-fg">(conn, sql, config, user_namespace)</span>
-<span class="ansi-green-fg">    372</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> result <span class="ansi-bold" style="color: rgb(175,0,255)">and</span> config.feedback:
-<span class="ansi-green-fg">    373</span>         <span style="color: rgb(0,135,0)">print</span>(interpret_rowcount(result.rowcount))
-<span class="ansi-green-fg">--&gt; </span><span class="ansi-green-fg">374</span> resultset = <span class="ansi-yellow-bg">ResultSet</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">result</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">config</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">    375</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> config.autopandas:
-<span class="ansi-green-fg">    376</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> resultset.DataFrame()
-
-<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\sql\run.py:116</span>, in <span class="ansi-cyan-fg">ResultSet.__init__</span><span class="ansi-blue-fg">(self, sqlaproxy, config)</span>
-<span class="ansi-green-fg">    114</span>         <span style="color: rgb(0,135,0)">list</span>.<span class="ansi-blue-fg">__init__</span>(<span style="color: rgb(0,135,0)">self</span>, sqlaproxy.fetchall())
-<span class="ansi-green-fg">    115</span>     <span style="color: rgb(0,135,0)">self</span>.field_names = unduplicate_field_names(<span style="color: rgb(0,135,0)">self</span>.keys)
-<span class="ansi-green-fg">--&gt; </span><span class="ansi-green-fg">116</span>     <span style="color: rgb(0,135,0)">self</span>.pretty = PrettyTable(<span style="color: rgb(0,135,0)">self</span>.field_names, style=<span class="ansi-yellow-bg">prettytable</span><span class="ansi-yellow-bg">.</span><span class="ansi-blue-fg ansi-yellow-bg">__dict__</span><span class="ansi-yellow-bg">[</span><span class="ansi-yellow-bg">config</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">style</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">upper</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg">]</span>)
-<span class="ansi-green-fg">    117</span> <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
-<span class="ansi-green-fg">    118</span>     <span style="color: rgb(0,135,0)">list</span>.<span class="ansi-blue-fg">__init__</span>(<span style="color: rgb(0,135,0)">self</span>, [])
-
-<span class="ansi-red-fg">KeyError</span>: 'DEFAULT'</pre>
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<table>
+<thead>
+<tr>
+<th>CLIENTE_ID</th>
+<th>NOME</th>
+<th>EMAIL</th>
+<th>TELEFONE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Leonardo</td>
+<td>leonardo@gmail.com</td>
+<td>9999-9999</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
@@ -3230,7 +3206,7 @@ Done.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-7">
@@ -3264,11 +3240,14 @@ VALUES ('Leonardo' , 'leo@gmail.com', '1199-991199' );</div>
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre> * sqlite:///contatos.db
-(sqlite3.IntegrityError) UNIQUE constraint failed: CLIENTES.EMAIL
-[SQL: INSERT INTO CLIENTES (NOME, EMAIL, TELEFONE) 
-VALUES ('Leonardo' , 'leo@gmail.com', '1199-991199' );]
-(Background on this error at: https://sqlalche.me/e/20/gkpj)
+1 rows affected.
 </pre>
+</div>
+</div>
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>[]</pre>
 </div>
 </div>
 </div>
@@ -3280,7 +3259,7 @@ VALUES ('Leonardo' , 'leo@gmail.com', '1199-991199' );]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-8">
@@ -3316,50 +3295,27 @@ Done.
 </pre>
 </div>
 </div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">KeyError</span>                                  Traceback (most recent call last)
-<span class="ansi-cyan-fg">Cell</span><span class="ansi-cyan-fg"> </span><span class="ansi-green-fg">In[8]</span><span class="ansi-green-fg">, line 1</span>
-<span class="ansi-green-fg">----&gt; </span><span class="ansi-green-fg">1</span> <span class="ansi-yellow-bg">get_ipython</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">run_cell_magic</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-fg ansi-yellow-bg">sql</span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-bg ansi-bold" style="color: rgb(175,95,0)">\n</span><span class="ansi-yellow-fg ansi-yellow-bg">SELECT * FROM CLIENTES WHERE NOME = </span><span class="ansi-yellow-fg ansi-yellow-bg">"</span><span class="ansi-yellow-fg ansi-yellow-bg">Leonardo</span><span class="ansi-yellow-fg ansi-yellow-bg">"</span><span class="ansi-yellow-fg ansi-yellow-bg"> AND EMAIL = </span><span class="ansi-yellow-bg ansi-bold" style="color: rgb(175,95,0)">\'</span><span class="ansi-yellow-fg ansi-yellow-bg">leo@gmail.com</span><span class="ansi-yellow-bg ansi-bold" style="color: rgb(175,95,0)">\'</span><span class="ansi-yellow-bg ansi-bold" style="color: rgb(175,95,0)">\n</span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-bg">)</span>
-
-<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\IPython\core\interactiveshell.py:2547</span>, in <span class="ansi-cyan-fg">InteractiveShell.run_cell_magic</span><span class="ansi-blue-fg">(self, magic_name, line, cell)</span>
-<span class="ansi-green-fg">   2545</span> <span class="ansi-bold" style="color: rgb(0,135,0)">with</span> <span style="color: rgb(0,135,0)">self</span>.builtin_trap:
-<span class="ansi-green-fg">   2546</span>     args = (magic_arg_s, cell)
-<span class="ansi-green-fg">-&gt; </span><span class="ansi-green-fg">2547</span>     result = <span class="ansi-yellow-bg">fn</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">args</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">kwargs</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">   2549</span> <span style="color: rgb(95,135,135)"># The code below prevents the output from being displayed</span>
-<span class="ansi-green-fg">   2550</span> <span style="color: rgb(95,135,135)"># when using magics with decorator @output_can_be_silenced</span>
-<span class="ansi-green-fg">   2551</span> <span style="color: rgb(95,135,135)"># when the last Python token in the expression is a ';'.</span>
-<span class="ansi-green-fg">   2552</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">getattr</span>(fn, magic.MAGIC_OUTPUT_CAN_BE_SILENCED, <span class="ansi-bold" style="color: rgb(0,135,0)">False</span>):
-
-<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\sql\magic.py:219</span>, in <span class="ansi-cyan-fg">SqlMagic.execute</span><span class="ansi-blue-fg">(self, line, cell, local_ns)</span>
-<span class="ansi-green-fg">    216</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span>
-<span class="ansi-green-fg">    218</span> <span class="ansi-bold" style="color: rgb(0,135,0)">try</span>:
-<span class="ansi-green-fg">--&gt; </span><span class="ansi-green-fg">219</span>     result = <span class="ansi-yellow-bg">sql</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">run</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">run</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">conn</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">parsed</span><span class="ansi-yellow-bg">[</span><span class="ansi-yellow-fg ansi-yellow-bg">"</span><span class="ansi-yellow-fg ansi-yellow-bg">sql</span><span class="ansi-yellow-fg ansi-yellow-bg">"</span><span class="ansi-yellow-bg">]</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">user_ns</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">    221</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> (
-<span class="ansi-green-fg">    222</span>         result <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>
-<span class="ansi-green-fg">    223</span>         <span class="ansi-bold" style="color: rgb(175,0,255)">and</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span style="color: rgb(0,135,0)">isinstance</span>(result, <span style="color: rgb(0,135,0)">str</span>)
-<span class="ansi-green-fg">   (...)</span><span class="ansi-green-fg">    226</span>         <span style="color: rgb(95,135,135)"># Instead of returning values, set variables directly in the</span>
-<span class="ansi-green-fg">    227</span>         <span style="color: rgb(95,135,135)"># user's namespace. Variable names given by column names</span>
-<span class="ansi-green-fg">    229</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">self</span>.autopandas:
-
-<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\sql\run.py:374</span>, in <span class="ansi-cyan-fg">run</span><span class="ansi-blue-fg">(conn, sql, config, user_namespace)</span>
-<span class="ansi-green-fg">    372</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> result <span class="ansi-bold" style="color: rgb(175,0,255)">and</span> config.feedback:
-<span class="ansi-green-fg">    373</span>         <span style="color: rgb(0,135,0)">print</span>(interpret_rowcount(result.rowcount))
-<span class="ansi-green-fg">--&gt; </span><span class="ansi-green-fg">374</span> resultset = <span class="ansi-yellow-bg">ResultSet</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">result</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">config</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">    375</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> config.autopandas:
-<span class="ansi-green-fg">    376</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> resultset.DataFrame()
-
-<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\sql\run.py:116</span>, in <span class="ansi-cyan-fg">ResultSet.__init__</span><span class="ansi-blue-fg">(self, sqlaproxy, config)</span>
-<span class="ansi-green-fg">    114</span>         <span style="color: rgb(0,135,0)">list</span>.<span class="ansi-blue-fg">__init__</span>(<span style="color: rgb(0,135,0)">self</span>, sqlaproxy.fetchall())
-<span class="ansi-green-fg">    115</span>     <span style="color: rgb(0,135,0)">self</span>.field_names = unduplicate_field_names(<span style="color: rgb(0,135,0)">self</span>.keys)
-<span class="ansi-green-fg">--&gt; </span><span class="ansi-green-fg">116</span>     <span style="color: rgb(0,135,0)">self</span>.pretty = PrettyTable(<span style="color: rgb(0,135,0)">self</span>.field_names, style=<span class="ansi-yellow-bg">prettytable</span><span class="ansi-yellow-bg">.</span><span class="ansi-blue-fg ansi-yellow-bg">__dict__</span><span class="ansi-yellow-bg">[</span><span class="ansi-yellow-bg">config</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">style</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">upper</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg">]</span>)
-<span class="ansi-green-fg">    117</span> <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
-<span class="ansi-green-fg">    118</span>     <span style="color: rgb(0,135,0)">list</span>.<span class="ansi-blue-fg">__init__</span>(<span style="color: rgb(0,135,0)">self</span>, [])
-
-<span class="ansi-red-fg">KeyError</span>: 'DEFAULT'</pre>
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<table>
+<thead>
+<tr>
+<th>CLIENTE_ID</th>
+<th>NOME</th>
+<th>EMAIL</th>
+<th>TELEFONE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td>Leonardo</td>
+<td>leo@gmail.com</td>
+<td>1199-991199</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
@@ -3371,7 +3327,7 @@ Done.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-9">
@@ -3407,50 +3363,51 @@ Done.
 </pre>
 </div>
 </div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">KeyError</span>                                  Traceback (most recent call last)
-<span class="ansi-cyan-fg">Cell</span><span class="ansi-cyan-fg"> </span><span class="ansi-green-fg">In[9]</span><span class="ansi-green-fg">, line 1</span>
-<span class="ansi-green-fg">----&gt; </span><span class="ansi-green-fg">1</span> <span class="ansi-yellow-bg">get_ipython</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">run_cell_magic</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-fg ansi-yellow-bg">sql</span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-bg ansi-bold" style="color: rgb(175,95,0)">\n</span><span class="ansi-yellow-fg ansi-yellow-bg">SELECT * FROM CLIENTES ORDER BY NOME</span><span class="ansi-yellow-bg ansi-bold" style="color: rgb(175,95,0)">\n</span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-bg">)</span>
-
-<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\IPython\core\interactiveshell.py:2547</span>, in <span class="ansi-cyan-fg">InteractiveShell.run_cell_magic</span><span class="ansi-blue-fg">(self, magic_name, line, cell)</span>
-<span class="ansi-green-fg">   2545</span> <span class="ansi-bold" style="color: rgb(0,135,0)">with</span> <span style="color: rgb(0,135,0)">self</span>.builtin_trap:
-<span class="ansi-green-fg">   2546</span>     args = (magic_arg_s, cell)
-<span class="ansi-green-fg">-&gt; </span><span class="ansi-green-fg">2547</span>     result = <span class="ansi-yellow-bg">fn</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">args</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">kwargs</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">   2549</span> <span style="color: rgb(95,135,135)"># The code below prevents the output from being displayed</span>
-<span class="ansi-green-fg">   2550</span> <span style="color: rgb(95,135,135)"># when using magics with decorator @output_can_be_silenced</span>
-<span class="ansi-green-fg">   2551</span> <span style="color: rgb(95,135,135)"># when the last Python token in the expression is a ';'.</span>
-<span class="ansi-green-fg">   2552</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">getattr</span>(fn, magic.MAGIC_OUTPUT_CAN_BE_SILENCED, <span class="ansi-bold" style="color: rgb(0,135,0)">False</span>):
-
-<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\sql\magic.py:219</span>, in <span class="ansi-cyan-fg">SqlMagic.execute</span><span class="ansi-blue-fg">(self, line, cell, local_ns)</span>
-<span class="ansi-green-fg">    216</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span>
-<span class="ansi-green-fg">    218</span> <span class="ansi-bold" style="color: rgb(0,135,0)">try</span>:
-<span class="ansi-green-fg">--&gt; </span><span class="ansi-green-fg">219</span>     result = <span class="ansi-yellow-bg">sql</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">run</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">run</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">conn</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">parsed</span><span class="ansi-yellow-bg">[</span><span class="ansi-yellow-fg ansi-yellow-bg">"</span><span class="ansi-yellow-fg ansi-yellow-bg">sql</span><span class="ansi-yellow-fg ansi-yellow-bg">"</span><span class="ansi-yellow-bg">]</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">user_ns</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">    221</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> (
-<span class="ansi-green-fg">    222</span>         result <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>
-<span class="ansi-green-fg">    223</span>         <span class="ansi-bold" style="color: rgb(175,0,255)">and</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span style="color: rgb(0,135,0)">isinstance</span>(result, <span style="color: rgb(0,135,0)">str</span>)
-<span class="ansi-green-fg">   (...)</span><span class="ansi-green-fg">    226</span>         <span style="color: rgb(95,135,135)"># Instead of returning values, set variables directly in the</span>
-<span class="ansi-green-fg">    227</span>         <span style="color: rgb(95,135,135)"># user's namespace. Variable names given by column names</span>
-<span class="ansi-green-fg">    229</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">self</span>.autopandas:
-
-<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\sql\run.py:374</span>, in <span class="ansi-cyan-fg">run</span><span class="ansi-blue-fg">(conn, sql, config, user_namespace)</span>
-<span class="ansi-green-fg">    372</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> result <span class="ansi-bold" style="color: rgb(175,0,255)">and</span> config.feedback:
-<span class="ansi-green-fg">    373</span>         <span style="color: rgb(0,135,0)">print</span>(interpret_rowcount(result.rowcount))
-<span class="ansi-green-fg">--&gt; </span><span class="ansi-green-fg">374</span> resultset = <span class="ansi-yellow-bg">ResultSet</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">result</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">config</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">    375</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> config.autopandas:
-<span class="ansi-green-fg">    376</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> resultset.DataFrame()
-
-<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\sql\run.py:116</span>, in <span class="ansi-cyan-fg">ResultSet.__init__</span><span class="ansi-blue-fg">(self, sqlaproxy, config)</span>
-<span class="ansi-green-fg">    114</span>         <span style="color: rgb(0,135,0)">list</span>.<span class="ansi-blue-fg">__init__</span>(<span style="color: rgb(0,135,0)">self</span>, sqlaproxy.fetchall())
-<span class="ansi-green-fg">    115</span>     <span style="color: rgb(0,135,0)">self</span>.field_names = unduplicate_field_names(<span style="color: rgb(0,135,0)">self</span>.keys)
-<span class="ansi-green-fg">--&gt; </span><span class="ansi-green-fg">116</span>     <span style="color: rgb(0,135,0)">self</span>.pretty = PrettyTable(<span style="color: rgb(0,135,0)">self</span>.field_names, style=<span class="ansi-yellow-bg">prettytable</span><span class="ansi-yellow-bg">.</span><span class="ansi-blue-fg ansi-yellow-bg">__dict__</span><span class="ansi-yellow-bg">[</span><span class="ansi-yellow-bg">config</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">style</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">upper</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg">]</span>)
-<span class="ansi-green-fg">    117</span> <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
-<span class="ansi-green-fg">    118</span>     <span style="color: rgb(0,135,0)">list</span>.<span class="ansi-blue-fg">__init__</span>(<span style="color: rgb(0,135,0)">self</span>, [])
-
-<span class="ansi-red-fg">KeyError</span>: 'DEFAULT'</pre>
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[26]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<table>
+<thead>
+<tr>
+<th>CLIENTE_ID</th>
+<th>NOME</th>
+<th>EMAIL</th>
+<th>TELEFONE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>Rafael</td>
+<td>rafael@gmail.com</td>
+<td>9889-8998</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Michelangelo</td>
+<td>michelangelo@gmail.com</td>
+<td>9997-7999</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Leonardo</td>
+<td>leonardo@gmail.com</td>
+<td>9999-9999</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Leonardo</td>
+<td>leo@gmail.com</td>
+<td>1199-991199</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Donatello</td>
+<td>donatello@gmail.com</td>
+<td>9777-7779</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
@@ -3462,7 +3419,7 @@ Done.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-10">
@@ -3498,50 +3455,30 @@ Done.
 </pre>
 </div>
 </div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">KeyError</span>                                  Traceback (most recent call last)
-<span class="ansi-cyan-fg">Cell</span><span class="ansi-cyan-fg"> </span><span class="ansi-green-fg">In[10]</span><span class="ansi-green-fg">, line 1</span>
-<span class="ansi-green-fg">----&gt; </span><span class="ansi-green-fg">1</span> <span class="ansi-yellow-bg">get_ipython</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">run_cell_magic</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-fg ansi-yellow-bg">sql</span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-bg ansi-bold" style="color: rgb(175,95,0)">\n</span><span class="ansi-yellow-fg ansi-yellow-bg">SELECT DISTINCT NOME FROM CLIENTES;</span><span class="ansi-yellow-bg ansi-bold" style="color: rgb(175,95,0)">\n</span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-bg">)</span>
-
-<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\IPython\core\interactiveshell.py:2547</span>, in <span class="ansi-cyan-fg">InteractiveShell.run_cell_magic</span><span class="ansi-blue-fg">(self, magic_name, line, cell)</span>
-<span class="ansi-green-fg">   2545</span> <span class="ansi-bold" style="color: rgb(0,135,0)">with</span> <span style="color: rgb(0,135,0)">self</span>.builtin_trap:
-<span class="ansi-green-fg">   2546</span>     args = (magic_arg_s, cell)
-<span class="ansi-green-fg">-&gt; </span><span class="ansi-green-fg">2547</span>     result = <span class="ansi-yellow-bg">fn</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">args</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">kwargs</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">   2549</span> <span style="color: rgb(95,135,135)"># The code below prevents the output from being displayed</span>
-<span class="ansi-green-fg">   2550</span> <span style="color: rgb(95,135,135)"># when using magics with decorator @output_can_be_silenced</span>
-<span class="ansi-green-fg">   2551</span> <span style="color: rgb(95,135,135)"># when the last Python token in the expression is a ';'.</span>
-<span class="ansi-green-fg">   2552</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">getattr</span>(fn, magic.MAGIC_OUTPUT_CAN_BE_SILENCED, <span class="ansi-bold" style="color: rgb(0,135,0)">False</span>):
-
-<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\sql\magic.py:219</span>, in <span class="ansi-cyan-fg">SqlMagic.execute</span><span class="ansi-blue-fg">(self, line, cell, local_ns)</span>
-<span class="ansi-green-fg">    216</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span>
-<span class="ansi-green-fg">    218</span> <span class="ansi-bold" style="color: rgb(0,135,0)">try</span>:
-<span class="ansi-green-fg">--&gt; </span><span class="ansi-green-fg">219</span>     result = <span class="ansi-yellow-bg">sql</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">run</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">run</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">conn</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">parsed</span><span class="ansi-yellow-bg">[</span><span class="ansi-yellow-fg ansi-yellow-bg">"</span><span class="ansi-yellow-fg ansi-yellow-bg">sql</span><span class="ansi-yellow-fg ansi-yellow-bg">"</span><span class="ansi-yellow-bg">]</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">user_ns</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">    221</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> (
-<span class="ansi-green-fg">    222</span>         result <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>
-<span class="ansi-green-fg">    223</span>         <span class="ansi-bold" style="color: rgb(175,0,255)">and</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span style="color: rgb(0,135,0)">isinstance</span>(result, <span style="color: rgb(0,135,0)">str</span>)
-<span class="ansi-green-fg">   (...)</span><span class="ansi-green-fg">    226</span>         <span style="color: rgb(95,135,135)"># Instead of returning values, set variables directly in the</span>
-<span class="ansi-green-fg">    227</span>         <span style="color: rgb(95,135,135)"># user's namespace. Variable names given by column names</span>
-<span class="ansi-green-fg">    229</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">self</span>.autopandas:
-
-<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\sql\run.py:374</span>, in <span class="ansi-cyan-fg">run</span><span class="ansi-blue-fg">(conn, sql, config, user_namespace)</span>
-<span class="ansi-green-fg">    372</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> result <span class="ansi-bold" style="color: rgb(175,0,255)">and</span> config.feedback:
-<span class="ansi-green-fg">    373</span>         <span style="color: rgb(0,135,0)">print</span>(interpret_rowcount(result.rowcount))
-<span class="ansi-green-fg">--&gt; </span><span class="ansi-green-fg">374</span> resultset = <span class="ansi-yellow-bg">ResultSet</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">result</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">config</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">    375</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> config.autopandas:
-<span class="ansi-green-fg">    376</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> resultset.DataFrame()
-
-<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\sql\run.py:116</span>, in <span class="ansi-cyan-fg">ResultSet.__init__</span><span class="ansi-blue-fg">(self, sqlaproxy, config)</span>
-<span class="ansi-green-fg">    114</span>         <span style="color: rgb(0,135,0)">list</span>.<span class="ansi-blue-fg">__init__</span>(<span style="color: rgb(0,135,0)">self</span>, sqlaproxy.fetchall())
-<span class="ansi-green-fg">    115</span>     <span style="color: rgb(0,135,0)">self</span>.field_names = unduplicate_field_names(<span style="color: rgb(0,135,0)">self</span>.keys)
-<span class="ansi-green-fg">--&gt; </span><span class="ansi-green-fg">116</span>     <span style="color: rgb(0,135,0)">self</span>.pretty = PrettyTable(<span style="color: rgb(0,135,0)">self</span>.field_names, style=<span class="ansi-yellow-bg">prettytable</span><span class="ansi-yellow-bg">.</span><span class="ansi-blue-fg ansi-yellow-bg">__dict__</span><span class="ansi-yellow-bg">[</span><span class="ansi-yellow-bg">config</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">style</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">upper</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg">]</span>)
-<span class="ansi-green-fg">    117</span> <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
-<span class="ansi-green-fg">    118</span>     <span style="color: rgb(0,135,0)">list</span>.<span class="ansi-blue-fg">__init__</span>(<span style="color: rgb(0,135,0)">self</span>, [])
-
-<span class="ansi-red-fg">KeyError</span>: 'DEFAULT'</pre>
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[30]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<table>
+<thead>
+<tr>
+<th>NOME</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Leonardo</td>
+</tr>
+<tr>
+<td>Rafael</td>
+</tr>
+<tr>
+<td>Michelangelo</td>
+</tr>
+<tr>
+<td>Donatello</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
@@ -3553,7 +3490,7 @@ Done.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-11">
@@ -3587,50 +3524,21 @@ Done.
 </pre>
 </div>
 </div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">KeyError</span>                                  Traceback (most recent call last)
-<span class="ansi-cyan-fg">Cell</span><span class="ansi-cyan-fg"> </span><span class="ansi-green-fg">In[11]</span><span class="ansi-green-fg">, line 1</span>
-<span class="ansi-green-fg">----&gt; </span><span class="ansi-green-fg">1</span> <span class="ansi-yellow-bg">get_ipython</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">run_cell_magic</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-fg ansi-yellow-bg">sql</span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-fg ansi-yellow-bg">SELECT COUNT(*) FROM clientes;</span><span class="ansi-yellow-bg ansi-bold" style="color: rgb(175,95,0)">\n</span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-bg">)</span>
-
-<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\IPython\core\interactiveshell.py:2547</span>, in <span class="ansi-cyan-fg">InteractiveShell.run_cell_magic</span><span class="ansi-blue-fg">(self, magic_name, line, cell)</span>
-<span class="ansi-green-fg">   2545</span> <span class="ansi-bold" style="color: rgb(0,135,0)">with</span> <span style="color: rgb(0,135,0)">self</span>.builtin_trap:
-<span class="ansi-green-fg">   2546</span>     args = (magic_arg_s, cell)
-<span class="ansi-green-fg">-&gt; </span><span class="ansi-green-fg">2547</span>     result = <span class="ansi-yellow-bg">fn</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">args</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">kwargs</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">   2549</span> <span style="color: rgb(95,135,135)"># The code below prevents the output from being displayed</span>
-<span class="ansi-green-fg">   2550</span> <span style="color: rgb(95,135,135)"># when using magics with decorator @output_can_be_silenced</span>
-<span class="ansi-green-fg">   2551</span> <span style="color: rgb(95,135,135)"># when the last Python token in the expression is a ';'.</span>
-<span class="ansi-green-fg">   2552</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">getattr</span>(fn, magic.MAGIC_OUTPUT_CAN_BE_SILENCED, <span class="ansi-bold" style="color: rgb(0,135,0)">False</span>):
-
-<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\sql\magic.py:219</span>, in <span class="ansi-cyan-fg">SqlMagic.execute</span><span class="ansi-blue-fg">(self, line, cell, local_ns)</span>
-<span class="ansi-green-fg">    216</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span>
-<span class="ansi-green-fg">    218</span> <span class="ansi-bold" style="color: rgb(0,135,0)">try</span>:
-<span class="ansi-green-fg">--&gt; </span><span class="ansi-green-fg">219</span>     result = <span class="ansi-yellow-bg">sql</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">run</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">run</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">conn</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">parsed</span><span class="ansi-yellow-bg">[</span><span class="ansi-yellow-fg ansi-yellow-bg">"</span><span class="ansi-yellow-fg ansi-yellow-bg">sql</span><span class="ansi-yellow-fg ansi-yellow-bg">"</span><span class="ansi-yellow-bg">]</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">user_ns</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">    221</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> (
-<span class="ansi-green-fg">    222</span>         result <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>
-<span class="ansi-green-fg">    223</span>         <span class="ansi-bold" style="color: rgb(175,0,255)">and</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span style="color: rgb(0,135,0)">isinstance</span>(result, <span style="color: rgb(0,135,0)">str</span>)
-<span class="ansi-green-fg">   (...)</span><span class="ansi-green-fg">    226</span>         <span style="color: rgb(95,135,135)"># Instead of returning values, set variables directly in the</span>
-<span class="ansi-green-fg">    227</span>         <span style="color: rgb(95,135,135)"># user's namespace. Variable names given by column names</span>
-<span class="ansi-green-fg">    229</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">self</span>.autopandas:
-
-<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\sql\run.py:374</span>, in <span class="ansi-cyan-fg">run</span><span class="ansi-blue-fg">(conn, sql, config, user_namespace)</span>
-<span class="ansi-green-fg">    372</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> result <span class="ansi-bold" style="color: rgb(175,0,255)">and</span> config.feedback:
-<span class="ansi-green-fg">    373</span>         <span style="color: rgb(0,135,0)">print</span>(interpret_rowcount(result.rowcount))
-<span class="ansi-green-fg">--&gt; </span><span class="ansi-green-fg">374</span> resultset = <span class="ansi-yellow-bg">ResultSet</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">result</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">config</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">    375</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> config.autopandas:
-<span class="ansi-green-fg">    376</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> resultset.DataFrame()
-
-<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\sql\run.py:116</span>, in <span class="ansi-cyan-fg">ResultSet.__init__</span><span class="ansi-blue-fg">(self, sqlaproxy, config)</span>
-<span class="ansi-green-fg">    114</span>         <span style="color: rgb(0,135,0)">list</span>.<span class="ansi-blue-fg">__init__</span>(<span style="color: rgb(0,135,0)">self</span>, sqlaproxy.fetchall())
-<span class="ansi-green-fg">    115</span>     <span style="color: rgb(0,135,0)">self</span>.field_names = unduplicate_field_names(<span style="color: rgb(0,135,0)">self</span>.keys)
-<span class="ansi-green-fg">--&gt; </span><span class="ansi-green-fg">116</span>     <span style="color: rgb(0,135,0)">self</span>.pretty = PrettyTable(<span style="color: rgb(0,135,0)">self</span>.field_names, style=<span class="ansi-yellow-bg">prettytable</span><span class="ansi-yellow-bg">.</span><span class="ansi-blue-fg ansi-yellow-bg">__dict__</span><span class="ansi-yellow-bg">[</span><span class="ansi-yellow-bg">config</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">style</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">upper</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg">]</span>)
-<span class="ansi-green-fg">    117</span> <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
-<span class="ansi-green-fg">    118</span>     <span style="color: rgb(0,135,0)">list</span>.<span class="ansi-blue-fg">__init__</span>(<span style="color: rgb(0,135,0)">self</span>, [])
-
-<span class="ansi-red-fg">KeyError</span>: 'DEFAULT'</pre>
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[32]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<table>
+<thead>
+<tr>
+<th>COUNT(*)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
@@ -3642,7 +3550,7 @@ Done.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-12">
@@ -3683,7 +3591,7 @@ WHERE EMAIL = 'leo@gmail.com';</div>
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[33]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>[]</pre>
 </div>
@@ -3697,7 +3605,7 @@ WHERE EMAIL = 'leo@gmail.com';</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-13">
@@ -3731,50 +3639,51 @@ Done.
 </pre>
 </div>
 </div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">KeyError</span>                                  Traceback (most recent call last)
-<span class="ansi-cyan-fg">Cell</span><span class="ansi-cyan-fg"> </span><span class="ansi-green-fg">In[13]</span><span class="ansi-green-fg">, line 1</span>
-<span class="ansi-green-fg">----&gt; </span><span class="ansi-green-fg">1</span> <span class="ansi-yellow-bg">get_ipython</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">run_cell_magic</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-fg ansi-yellow-bg">sql</span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-fg ansi-yellow-bg">select * from clientes;</span><span class="ansi-yellow-bg ansi-bold" style="color: rgb(175,95,0)">\n</span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-bg">)</span>
-
-<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\IPython\core\interactiveshell.py:2547</span>, in <span class="ansi-cyan-fg">InteractiveShell.run_cell_magic</span><span class="ansi-blue-fg">(self, magic_name, line, cell)</span>
-<span class="ansi-green-fg">   2545</span> <span class="ansi-bold" style="color: rgb(0,135,0)">with</span> <span style="color: rgb(0,135,0)">self</span>.builtin_trap:
-<span class="ansi-green-fg">   2546</span>     args = (magic_arg_s, cell)
-<span class="ansi-green-fg">-&gt; </span><span class="ansi-green-fg">2547</span>     result = <span class="ansi-yellow-bg">fn</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">args</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">kwargs</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">   2549</span> <span style="color: rgb(95,135,135)"># The code below prevents the output from being displayed</span>
-<span class="ansi-green-fg">   2550</span> <span style="color: rgb(95,135,135)"># when using magics with decorator @output_can_be_silenced</span>
-<span class="ansi-green-fg">   2551</span> <span style="color: rgb(95,135,135)"># when the last Python token in the expression is a ';'.</span>
-<span class="ansi-green-fg">   2552</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">getattr</span>(fn, magic.MAGIC_OUTPUT_CAN_BE_SILENCED, <span class="ansi-bold" style="color: rgb(0,135,0)">False</span>):
-
-<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\sql\magic.py:219</span>, in <span class="ansi-cyan-fg">SqlMagic.execute</span><span class="ansi-blue-fg">(self, line, cell, local_ns)</span>
-<span class="ansi-green-fg">    216</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span>
-<span class="ansi-green-fg">    218</span> <span class="ansi-bold" style="color: rgb(0,135,0)">try</span>:
-<span class="ansi-green-fg">--&gt; </span><span class="ansi-green-fg">219</span>     result = <span class="ansi-yellow-bg">sql</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">run</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">run</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">conn</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">parsed</span><span class="ansi-yellow-bg">[</span><span class="ansi-yellow-fg ansi-yellow-bg">"</span><span class="ansi-yellow-fg ansi-yellow-bg">sql</span><span class="ansi-yellow-fg ansi-yellow-bg">"</span><span class="ansi-yellow-bg">]</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">user_ns</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">    221</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> (
-<span class="ansi-green-fg">    222</span>         result <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>
-<span class="ansi-green-fg">    223</span>         <span class="ansi-bold" style="color: rgb(175,0,255)">and</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span style="color: rgb(0,135,0)">isinstance</span>(result, <span style="color: rgb(0,135,0)">str</span>)
-<span class="ansi-green-fg">   (...)</span><span class="ansi-green-fg">    226</span>         <span style="color: rgb(95,135,135)"># Instead of returning values, set variables directly in the</span>
-<span class="ansi-green-fg">    227</span>         <span style="color: rgb(95,135,135)"># user's namespace. Variable names given by column names</span>
-<span class="ansi-green-fg">    229</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">self</span>.autopandas:
-
-<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\sql\run.py:374</span>, in <span class="ansi-cyan-fg">run</span><span class="ansi-blue-fg">(conn, sql, config, user_namespace)</span>
-<span class="ansi-green-fg">    372</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> result <span class="ansi-bold" style="color: rgb(175,0,255)">and</span> config.feedback:
-<span class="ansi-green-fg">    373</span>         <span style="color: rgb(0,135,0)">print</span>(interpret_rowcount(result.rowcount))
-<span class="ansi-green-fg">--&gt; </span><span class="ansi-green-fg">374</span> resultset = <span class="ansi-yellow-bg">ResultSet</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">result</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">config</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">    375</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> config.autopandas:
-<span class="ansi-green-fg">    376</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> resultset.DataFrame()
-
-<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\sql\run.py:116</span>, in <span class="ansi-cyan-fg">ResultSet.__init__</span><span class="ansi-blue-fg">(self, sqlaproxy, config)</span>
-<span class="ansi-green-fg">    114</span>         <span style="color: rgb(0,135,0)">list</span>.<span class="ansi-blue-fg">__init__</span>(<span style="color: rgb(0,135,0)">self</span>, sqlaproxy.fetchall())
-<span class="ansi-green-fg">    115</span>     <span style="color: rgb(0,135,0)">self</span>.field_names = unduplicate_field_names(<span style="color: rgb(0,135,0)">self</span>.keys)
-<span class="ansi-green-fg">--&gt; </span><span class="ansi-green-fg">116</span>     <span style="color: rgb(0,135,0)">self</span>.pretty = PrettyTable(<span style="color: rgb(0,135,0)">self</span>.field_names, style=<span class="ansi-yellow-bg">prettytable</span><span class="ansi-yellow-bg">.</span><span class="ansi-blue-fg ansi-yellow-bg">__dict__</span><span class="ansi-yellow-bg">[</span><span class="ansi-yellow-bg">config</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">style</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">upper</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg">]</span>)
-<span class="ansi-green-fg">    117</span> <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
-<span class="ansi-green-fg">    118</span>     <span style="color: rgb(0,135,0)">list</span>.<span class="ansi-blue-fg">__init__</span>(<span style="color: rgb(0,135,0)">self</span>, [])
-
-<span class="ansi-red-fg">KeyError</span>: 'DEFAULT'</pre>
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[36]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<table>
+<thead>
+<tr>
+<th>CLIENTE_ID</th>
+<th>NOME</th>
+<th>EMAIL</th>
+<th>TELEFONE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Leonardo</td>
+<td>leonardo@gmail.com</td>
+<td>9999-9999</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Rafael</td>
+<td>rafael@gmail.com</td>
+<td>9889-8998</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Michelangelo</td>
+<td>michelangelo@gmail.com</td>
+<td>9997-7999</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Donatello</td>
+<td>donatello@gmail.com</td>
+<td>9777-7779</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Leonardo X</td>
+<td>leo@gmail.com</td>
+<td>1199-991199</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
@@ -3786,7 +3695,7 @@ Done.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-14">
@@ -3823,7 +3732,7 @@ DELETE FROM clientes WHERE nome = 'Leonardo X';</div>
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[37]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>[]</pre>
 </div>
@@ -3837,7 +3746,7 @@ DELETE FROM clientes WHERE nome = 'Leonardo X';</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [42]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-15">
@@ -3871,50 +3780,51 @@ Done.
 </pre>
 </div>
 </div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">KeyError</span>                                  Traceback (most recent call last)
-<span class="ansi-cyan-fg">Cell</span><span class="ansi-cyan-fg"> </span><span class="ansi-green-fg">In[15]</span><span class="ansi-green-fg">, line 1</span>
-<span class="ansi-green-fg">----&gt; </span><span class="ansi-green-fg">1</span> <span class="ansi-yellow-bg">get_ipython</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">run_cell_magic</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-fg ansi-yellow-bg">sql</span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-fg ansi-yellow-bg">select * from clientes;</span><span class="ansi-yellow-bg ansi-bold" style="color: rgb(175,95,0)">\n</span><span class="ansi-yellow-fg ansi-yellow-bg">'</span><span class="ansi-yellow-bg">)</span>
-
-<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\IPython\core\interactiveshell.py:2547</span>, in <span class="ansi-cyan-fg">InteractiveShell.run_cell_magic</span><span class="ansi-blue-fg">(self, magic_name, line, cell)</span>
-<span class="ansi-green-fg">   2545</span> <span class="ansi-bold" style="color: rgb(0,135,0)">with</span> <span style="color: rgb(0,135,0)">self</span>.builtin_trap:
-<span class="ansi-green-fg">   2546</span>     args = (magic_arg_s, cell)
-<span class="ansi-green-fg">-&gt; </span><span class="ansi-green-fg">2547</span>     result = <span class="ansi-yellow-bg">fn</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">args</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">kwargs</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">   2549</span> <span style="color: rgb(95,135,135)"># The code below prevents the output from being displayed</span>
-<span class="ansi-green-fg">   2550</span> <span style="color: rgb(95,135,135)"># when using magics with decorator @output_can_be_silenced</span>
-<span class="ansi-green-fg">   2551</span> <span style="color: rgb(95,135,135)"># when the last Python token in the expression is a ';'.</span>
-<span class="ansi-green-fg">   2552</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">getattr</span>(fn, magic.MAGIC_OUTPUT_CAN_BE_SILENCED, <span class="ansi-bold" style="color: rgb(0,135,0)">False</span>):
-
-<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\sql\magic.py:219</span>, in <span class="ansi-cyan-fg">SqlMagic.execute</span><span class="ansi-blue-fg">(self, line, cell, local_ns)</span>
-<span class="ansi-green-fg">    216</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span>
-<span class="ansi-green-fg">    218</span> <span class="ansi-bold" style="color: rgb(0,135,0)">try</span>:
-<span class="ansi-green-fg">--&gt; </span><span class="ansi-green-fg">219</span>     result = <span class="ansi-yellow-bg">sql</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">run</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">run</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">conn</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">parsed</span><span class="ansi-yellow-bg">[</span><span class="ansi-yellow-fg ansi-yellow-bg">"</span><span class="ansi-yellow-fg ansi-yellow-bg">sql</span><span class="ansi-yellow-fg ansi-yellow-bg">"</span><span class="ansi-yellow-bg">]</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">user_ns</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">    221</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> (
-<span class="ansi-green-fg">    222</span>         result <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>
-<span class="ansi-green-fg">    223</span>         <span class="ansi-bold" style="color: rgb(175,0,255)">and</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span style="color: rgb(0,135,0)">isinstance</span>(result, <span style="color: rgb(0,135,0)">str</span>)
-<span class="ansi-green-fg">   (...)</span><span class="ansi-green-fg">    226</span>         <span style="color: rgb(95,135,135)"># Instead of returning values, set variables directly in the</span>
-<span class="ansi-green-fg">    227</span>         <span style="color: rgb(95,135,135)"># user's namespace. Variable names given by column names</span>
-<span class="ansi-green-fg">    229</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">self</span>.autopandas:
-
-<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\sql\run.py:374</span>, in <span class="ansi-cyan-fg">run</span><span class="ansi-blue-fg">(conn, sql, config, user_namespace)</span>
-<span class="ansi-green-fg">    372</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> result <span class="ansi-bold" style="color: rgb(175,0,255)">and</span> config.feedback:
-<span class="ansi-green-fg">    373</span>         <span style="color: rgb(0,135,0)">print</span>(interpret_rowcount(result.rowcount))
-<span class="ansi-green-fg">--&gt; </span><span class="ansi-green-fg">374</span> resultset = <span class="ansi-yellow-bg">ResultSet</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">result</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">config</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">    375</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> config.autopandas:
-<span class="ansi-green-fg">    376</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> resultset.DataFrame()
-
-<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">c:\Users\00661711722\Documents\PBE_ADS_25.1_8001\.venv\Lib\site-packages\sql\run.py:116</span>, in <span class="ansi-cyan-fg">ResultSet.__init__</span><span class="ansi-blue-fg">(self, sqlaproxy, config)</span>
-<span class="ansi-green-fg">    114</span>         <span style="color: rgb(0,135,0)">list</span>.<span class="ansi-blue-fg">__init__</span>(<span style="color: rgb(0,135,0)">self</span>, sqlaproxy.fetchall())
-<span class="ansi-green-fg">    115</span>     <span style="color: rgb(0,135,0)">self</span>.field_names = unduplicate_field_names(<span style="color: rgb(0,135,0)">self</span>.keys)
-<span class="ansi-green-fg">--&gt; </span><span class="ansi-green-fg">116</span>     <span style="color: rgb(0,135,0)">self</span>.pretty = PrettyTable(<span style="color: rgb(0,135,0)">self</span>.field_names, style=<span class="ansi-yellow-bg">prettytable</span><span class="ansi-yellow-bg">.</span><span class="ansi-blue-fg ansi-yellow-bg">__dict__</span><span class="ansi-yellow-bg">[</span><span class="ansi-yellow-bg">config</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">style</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">upper</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg">]</span>)
-<span class="ansi-green-fg">    117</span> <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
-<span class="ansi-green-fg">    118</span>     <span style="color: rgb(0,135,0)">list</span>.<span class="ansi-blue-fg">__init__</span>(<span style="color: rgb(0,135,0)">self</span>, [])
-
-<span class="ansi-red-fg">KeyError</span>: 'DEFAULT'</pre>
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[42]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<table>
+<thead>
+<tr>
+<th>CLIENTE_ID</th>
+<th>NOME</th>
+<th>EMAIL</th>
+<th>TELEFONE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Leonardo</td>
+<td>leonardo@gmail.com</td>
+<td>9999-9999</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Rafael</td>
+<td>rafael@gmail.com</td>
+<td>9889-8998</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Michelangelo</td>
+<td>michelangelo@gmail.com</td>
+<td>9997-7999</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Donatello</td>
+<td>donatello@gmail.com</td>
+<td>9777-7779</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Leonardo</td>
+<td>leo@gmail.com</td>
+<td>1999-9999</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
@@ -3926,7 +3836,7 @@ Done.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-16">
@@ -3965,7 +3875,7 @@ VALUES ('Leonardo', 'leo@gmail.com', '1999-9999')</div>
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[41]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>[]</pre>
 </div>
