@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../Intro%20Django%20Rest/">
+        <link rel="prev" href="../01_Intro/">
       
       
-        <link rel="next" href="../../Poo/Procedural%20x%20Poo/">
+        <link rel="next" href="../03_Consume/">
       
       
       <link rel="icon" href="../../../../../images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Introdução ao Django - Projeto Back-End</title>
+        <title>Introdução ao Django REST - Projeto Back-End</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introducao-ao-django" class="md-skip">
+        <a href="#introducao-ao-django-rest" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -105,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introdução ao Django
+              Introdução ao Django REST
             
           </span>
         </div>
@@ -886,11 +886,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../Intro%20Django%20Rest/" class="md-nav__link">
+      <a href="../01_Intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Introdução ao Django REST
+    Introdução ao Django
     
   </span>
   
@@ -921,7 +921,7 @@
           
   
   <span class="md-ellipsis">
-    Introdução ao Django
+    Introdução ao Django REST
     
   </span>
   
@@ -933,7 +933,7 @@
         
   
   <span class="md-ellipsis">
-    Introdução ao Django
+    Introdução ao Django REST
     
   </span>
   
@@ -956,90 +956,54 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pre-requisitos" class="md-nav__link">
+  <a href="#1-instalacao-e-configuracao-inicial" class="md-nav__link">
     <span class="md-ellipsis">
-      Pré-requisitos
+      1. Instalação e Configuração Inicial
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#passo-1-configurar-ambiente-virtual" class="md-nav__link">
+  <a href="#2-criacao-dos-serializers" class="md-nav__link">
     <span class="md-ellipsis">
-      Passo 1: Configurar Ambiente Virtual
+      2. Criação dos Serializers
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#passo-2-instalar-django-e-dependencias" class="md-nav__link">
+  <a href="#3-criacao-das-viewsets-e-api-views" class="md-nav__link">
     <span class="md-ellipsis">
-      Passo 2: Instalar Django e Dependências
+      3. Criação das Viewsets e API Views
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#passo-3-criar-projeto-django" class="md-nav__link">
+  <a href="#4-configuracao-das-urls-da-api" class="md-nav__link">
     <span class="md-ellipsis">
-      Passo 3: Criar Projeto Django
+      4. Configuração das URLs da API
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#passo-4-configurar-o-banco-de-dados-sqlite" class="md-nav__link">
+  <a href="#5-documentacao-da-api-com-swaggeropenapi" class="md-nav__link">
     <span class="md-ellipsis">
-      Passo 4: Configurar o Banco de Dados SQLite
+      5. Documentação da API com Swagger/OpenAPI
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#passo-5-criar-uma-aplicacao-django" class="md-nav__link">
+  <a href="#6-testando-a-api" class="md-nav__link">
     <span class="md-ellipsis">
-      Passo 5: Criar uma Aplicação Django
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#passo-6-configurar-urls-e-views-basicas" class="md-nav__link">
-    <span class="md-ellipsis">
-      Passo 6: Configurar URLs e Views Básicas
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#passo-7-criar-modelos-e-migracoes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Passo 7: Criar Modelos e Migrações
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#passo-8-configurar-o-painel-de-administracao" class="md-nav__link">
-    <span class="md-ellipsis">
-      Passo 8: Configurar o Painel de Administração
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#passo-9-executar-o-servidor-de-desenvolvimento" class="md-nav__link">
-    <span class="md-ellipsis">
-      Passo 9: Executar o Servidor de Desenvolvimento
+      6. Testando a API
     </span>
   </a>
   
@@ -1048,6 +1012,317 @@
     </ul>
   
 </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_Consume/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Acessando a API do Django REST Framework
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_3_2_4" id="__nav_2_4_3_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Streaming
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_4_3_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_3_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Streaming
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Streaming/01_Projeto_Streaming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    01 - Projeto Streaming
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Streaming/01_Regras_Neg%C3%B3cio_Streaming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    02 - Regras de Negócio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Streaming/02_Modelagem_Streaming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    02 - Modelagem de Dados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Streaming/03_Rest_Streaming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    03 - Rest Streaming
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Streaming/04_Shell_Streaming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    04 - Django Shell
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Streaming/05_Consume_Streaming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5 - Consume API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Streaming/06_Consume_Streaming_Web/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6 - Fetch consume API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Streaming/07_Admin_Streaming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7 - Django Admin
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Streaming/08_CorsOrigin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cross-Origin
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Streaming/09_Filtros/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9 - Filtros
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Streaming/10_Autentica%C3%A7%C3%A3o/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10 Autenticação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -2215,90 +2490,54 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pre-requisitos" class="md-nav__link">
+  <a href="#1-instalacao-e-configuracao-inicial" class="md-nav__link">
     <span class="md-ellipsis">
-      Pré-requisitos
+      1. Instalação e Configuração Inicial
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#passo-1-configurar-ambiente-virtual" class="md-nav__link">
+  <a href="#2-criacao-dos-serializers" class="md-nav__link">
     <span class="md-ellipsis">
-      Passo 1: Configurar Ambiente Virtual
+      2. Criação dos Serializers
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#passo-2-instalar-django-e-dependencias" class="md-nav__link">
+  <a href="#3-criacao-das-viewsets-e-api-views" class="md-nav__link">
     <span class="md-ellipsis">
-      Passo 2: Instalar Django e Dependências
+      3. Criação das Viewsets e API Views
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#passo-3-criar-projeto-django" class="md-nav__link">
+  <a href="#4-configuracao-das-urls-da-api" class="md-nav__link">
     <span class="md-ellipsis">
-      Passo 3: Criar Projeto Django
+      4. Configuração das URLs da API
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#passo-4-configurar-o-banco-de-dados-sqlite" class="md-nav__link">
+  <a href="#5-documentacao-da-api-com-swaggeropenapi" class="md-nav__link">
     <span class="md-ellipsis">
-      Passo 4: Configurar o Banco de Dados SQLite
+      5. Documentação da API com Swagger/OpenAPI
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#passo-5-criar-uma-aplicacao-django" class="md-nav__link">
+  <a href="#6-testando-a-api" class="md-nav__link">
     <span class="md-ellipsis">
-      Passo 5: Criar uma Aplicação Django
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#passo-6-configurar-urls-e-views-basicas" class="md-nav__link">
-    <span class="md-ellipsis">
-      Passo 6: Configurar URLs e Views Básicas
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#passo-7-criar-modelos-e-migracoes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Passo 7: Criar Modelos e Migrações
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#passo-8-configurar-o-painel-de-administracao" class="md-nav__link">
-    <span class="md-ellipsis">
-      Passo 8: Configurar o Painel de Administração
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#passo-9-executar-o-servidor-de-desenvolvimento" class="md-nav__link">
-    <span class="md-ellipsis">
-      Passo 9: Executar o Servidor de Desenvolvimento
+      6. Testando a API
     </span>
   </a>
   
@@ -2323,176 +2562,137 @@
   
 
 
-<h1 id="introducao-ao-django">Introdução ao Django</h1>
-<p>Roteiro para Desenvolvimento de Aplicação Web Django com SQLite no VS Code</p>
-<h2 id="pre-requisitos">Pré-requisitos</h2>
+<h1 id="introducao-ao-django-rest">Introdução ao Django REST</h1>
+<p>Uma extensão do aplicativo Django inicial para incluir uma API RESTful usando Django REST Framework, mantendo a funcionalidade existente e adicionando endpoints API.</p>
+<h2 id="1-instalacao-e-configuracao-inicial">1. Instalação e Configuração Inicial</h2>
+<p>Primeiro, vamos instalar e configurar o DRF:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>djangorestframework
+</span></code></pre></div>
+<p>Adicione ao <code>INSTALLED_APPS</code> em <code>myproject/settings.py</code>:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="p">[</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="o">...</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="s1">&#39;rest_framework&#39;</span><span class="p">,</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="s1">&#39;myapp&#39;</span><span class="p">,</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="p">]</span>
+</span></code></pre></div>
+<h2 id="2-criacao-dos-serializers">2. Criação dos Serializers</h2>
+<p>Crie um arquivo <code>serializers.py</code> na aplicação <code>minhaapp</code>:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># minhaapp/serializers.py</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">rest_framework</span><span class="w"> </span><span class="kn">import</span> <span class="n">serializers</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">myapp.models</span><span class="w"> </span><span class="kn">import</span> <span class="n">Produto</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="k">class</span><span class="w"> </span><span class="nc">ProdutoSerializer</span><span class="p">(</span><span class="n">serializers</span><span class="o">.</span><span class="n">ModelSerializer</span><span class="p">):</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="k">class</span><span class="w"> </span><span class="nc">Meta</span><span class="p">:</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>        <span class="n">model</span> <span class="o">=</span> <span class="n">Produto</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>        <span class="n">fields</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;nome&#39;</span><span class="p">,</span> <span class="s1">&#39;preco&#39;</span><span class="p">,</span> <span class="s1">&#39;descricao&#39;</span><span class="p">,</span> <span class="s1">&#39;disponivel&#39;</span><span class="p">]</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>        <span class="n">read_only_fields</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span>
+</span></code></pre></div>
+<h2 id="3-criacao-das-viewsets-e-api-views">3. Criação das Viewsets e API Views</h2>
+<p>Atualize ou crie um arquivo <code>api.py</code> na aplicação:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># minhaapp/api.py</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">rest_framework</span><span class="w"> </span><span class="kn">import</span> <span class="n">viewsets</span><span class="p">,</span> <span class="n">generics</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">rest_framework.response</span><span class="w"> </span><span class="kn">import</span> <span class="n">Response</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">rest_framework.decorators</span><span class="w"> </span><span class="kn">import</span> <span class="n">action</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="kn">from</span><span class="w"> </span><span class="nn">myapp.models</span><span class="w"> </span><span class="kn">import</span> <span class="n">Produto</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="kn">from</span><span class="w"> </span><span class="nn">myapp.serializers</span><span class="w"> </span><span class="kn">import</span> <span class="n">ProdutoSerializer</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="k">class</span><span class="w"> </span><span class="nc">ProdutoViewSet</span><span class="p">(</span><span class="n">viewsets</span><span class="o">.</span><span class="n">ModelViewSet</span><span class="p">):</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    <span class="n">queryset</span> <span class="o">=</span> <span class="n">Produto</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    <span class="n">serializer_class</span> <span class="o">=</span> <span class="n">ProdutoSerializer</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>    <span class="nd">@action</span><span class="p">(</span><span class="n">detail</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;get&#39;</span><span class="p">])</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">disponiveis</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">):</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>        <span class="n">produtos</span> <span class="o">=</span> <span class="n">Produto</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">disponivel</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>        <span class="n">serializer</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_serializer</span><span class="p">(</span><span class="n">produtos</span><span class="p">,</span> <span class="n">many</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>        <span class="k">return</span> <span class="n">Response</span><span class="p">(</span><span class="n">serializer</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="k">class</span><span class="w"> </span><span class="nc">ProdutosBaratosAPIView</span><span class="p">(</span><span class="n">generics</span><span class="o">.</span><span class="n">ListAPIView</span><span class="p">):</span>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>    <span class="n">serializer_class</span> <span class="o">=</span> <span class="n">ProdutoSerializer</span>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">get_queryset</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>        <span class="k">return</span> <span class="n">Produto</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">preco__lt</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+</span></code></pre></div>
+<h2 id="4-configuracao-das-urls-da-api">4. Configuração das URLs da API</h2>
+<p>Crie um arquivo <code>api_urls.py</code> na aplicação:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># myapp/api_urls.py</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">django.urls</span><span class="w"> </span><span class="kn">import</span> <span class="n">path</span><span class="p">,</span> <span class="n">include</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">rest_framework.routers</span><span class="w"> </span><span class="kn">import</span> <span class="n">DefaultRouter</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">minhaapp.api</span><span class="w"> </span><span class="kn">import</span> <span class="n">ProdutoViewSet</span><span class="p">,</span> <span class="n">ProdutosBaratosAPIView</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="n">router</span> <span class="o">=</span> <span class="n">DefaultRouter</span><span class="p">()</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="n">router</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;produtos&#39;</span><span class="p">,</span> <span class="n">ProdutoViewSet</span><span class="p">,</span> <span class="n">basename</span><span class="o">=</span><span class="s1">&#39;produto&#39;</span><span class="p">)</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="n">router</span><span class="o">.</span><span class="n">urls</span><span class="p">)),</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;produtos/baratos/&#39;</span><span class="p">,</span> <span class="n">ProdutosBaratosAPIView</span><span class="o">.</span><span class="n">as_view</span><span class="p">(),</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;produtos-baratos&#39;</span><span class="p">),</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="p">]</span>
+</span></code></pre></div>
+<p>Atualize o <code>urls.py</code> principal do projeto:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># myproject/urls.py</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">django.contrib</span><span class="w"> </span><span class="kn">import</span> <span class="n">admin</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">django.urls</span><span class="w"> </span><span class="kn">import</span> <span class="n">path</span><span class="p">,</span> <span class="n">include</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;admin/&#39;</span><span class="p">,</span> <span class="n">admin</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">urls</span><span class="p">),</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="s1">&#39;myapp.urls&#39;</span><span class="p">)),</span>  <span class="c1"># URLs tradicionais</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;api/&#39;</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="s1">&#39;minhaapp.api_urls&#39;</span><span class="p">)),</span>  <span class="c1"># URLs da API</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;api-auth/&#39;</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="s1">&#39;rest_framework.urls&#39;</span><span class="p">)),</span>  <span class="c1"># Login para a API</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="p">]</span>
+</span></code></pre></div>
+<h2 id="5-documentacao-da-api-com-swaggeropenapi">5. Documentação da API com Swagger/OpenAPI</h2>
+<p>Instale o drf-yasg para documentação:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>pip<span class="w"> </span>install<span class="w"> </span>drf-yasg
+</span></code></pre></div>
+<p>Adicione ao <code>INSTALLED_APPS</code>:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="p">[</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>    <span class="o">...</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    <span class="s1">&#39;drf_yasg&#39;</span><span class="p">,</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="p">]</span>
+</span></code></pre></div>
+<p>Atualize o <code>urls.py</code> principal:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># myproject/urls.py</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">rest_framework</span><span class="w"> </span><span class="kn">import</span> <span class="n">permissions</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">drf_yasg.views</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_schema_view</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">drf_yasg</span><span class="w"> </span><span class="kn">import</span> <span class="n">openapi</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="n">schema_view</span> <span class="o">=</span> <span class="n">get_schema_view</span><span class="p">(</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>   <span class="n">openapi</span><span class="o">.</span><span class="n">Info</span><span class="p">(</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>      <span class="n">title</span><span class="o">=</span><span class="s2">&quot;API de Produtos&quot;</span><span class="p">,</span>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>      <span class="n">default_version</span><span class="o">=</span><span class="s1">&#39;v1&#39;</span><span class="p">,</span>
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>      <span class="n">description</span><span class="o">=</span><span class="s2">&quot;API para gerenciamento de produtos&quot;</span><span class="p">,</span>
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>      <span class="n">terms_of_service</span><span class="o">=</span><span class="s2">&quot;https://www.google.com/policies/terms/&quot;</span><span class="p">,</span>
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>      <span class="n">contact</span><span class="o">=</span><span class="n">openapi</span><span class="o">.</span><span class="n">Contact</span><span class="p">(</span><span class="n">email</span><span class="o">=</span><span class="s2">&quot;contato@empresa.com&quot;</span><span class="p">),</span>
+</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>      <span class="n">license</span><span class="o">=</span><span class="n">openapi</span><span class="o">.</span><span class="n">License</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;BSD License&quot;</span><span class="p">),</span>
+</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>   <span class="p">),</span>
+</span><span id="__span-8-15"><a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a>   <span class="n">public</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+</span><span id="__span-8-16"><a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>   <span class="n">permission_classes</span><span class="o">=</span><span class="p">(</span><span class="n">permissions</span><span class="o">.</span><span class="n">AllowAny</span><span class="p">,),</span>
+</span><span id="__span-8-17"><a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a><span class="p">)</span>
+</span><span id="__span-8-18"><a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a>
+</span><span id="__span-8-19"><a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a><span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
+</span><span id="__span-8-20"><a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a>    <span class="c1"># ... URLs existentes</span>
+</span><span id="__span-8-21"><a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a>    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;swagger/&#39;</span><span class="p">,</span> <span class="n">schema_view</span><span class="o">.</span><span class="n">with_ui</span><span class="p">(</span><span class="s1">&#39;swagger&#39;</span><span class="p">,</span> <span class="n">cache_timeout</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;schema-swagger-ui&#39;</span><span class="p">),</span>
+</span><span id="__span-8-22"><a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a>    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;redoc/&#39;</span><span class="p">,</span> <span class="n">schema_view</span><span class="o">.</span><span class="n">with_ui</span><span class="p">(</span><span class="s1">&#39;redoc&#39;</span><span class="p">,</span> <span class="n">cache_timeout</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;schema-redoc&#39;</span><span class="p">),</span>
+</span><span id="__span-8-23"><a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a><span class="p">]</span>
+</span></code></pre></div>
+<h2 id="6-testando-a-api">6. Testando a API</h2>
+<p>Agora você pode testar os endpoints da API:</p>
+<ol>
+<li><strong>Listar todos os produtos</strong>: <code>GET /api/produtos/</code></li>
+<li><strong>Criar novo produto</strong>: <code>POST /api/produtos/</code></li>
+<li><strong>Detalhes de um produto</strong>: <code>GET /api/produtos/1/</code></li>
+<li><strong>Atualizar produto</strong>: <code>PUT /api/produtos/1/</code></li>
+<li><strong>Produtos disponíveis</strong>: <code>GET /api/produtos/disponiveis/</code></li>
+<li><strong>Produtos baratos</strong>: <code>GET /api/produtos/baratos/</code></li>
+<li><strong>Documentação Swagger</strong>: <code>GET /swagger/</code></li>
+<li><strong>Documentação ReDoc</strong>: <code>GET /redoc/</code></li>
+</ol>
+<p>Esta extensão transforma seu aplicativo Django em uma API RESTful poderosa enquanto mantém a funcionalidade web tradicional. Você agora pode:</p>
 <ul>
-<li>Visual Studio Code instalado</li>
-<li>Python instalado (versão 3.8 ou superior)</li>
-<li>Extensão Python para VS Code (recomendado)</li>
+<li>Consumir a API com frontends modernos (React, Vue, Angular)</li>
+<li>Oferecer serviços para aplicativos móveis</li>
+<li>Integrar com outros sistemas via API</li>
+<li>Manter uma arquitetura escalável e bem organizada</li>
 </ul>
-<h2 id="passo-1-configurar-ambiente-virtual">Passo 1: Configurar Ambiente Virtual</h2>
-<ol>
-<li>Abra o terminal no VS Code (<code>Ctrl+</code> ou Terminal &gt; Novo Terminal)</li>
-<li>Navegue até a pasta onde deseja criar o projeto</li>
-<li>Crie o ambiente virtual:</li>
-</ol>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ctrl +shift + P
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Python Create Enviroment
-</span></code></pre></div>
-<p>ou </p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>venv
-</span></code></pre></div>
-<ol>
-<li>Ative o ambiente virtual:</li>
-<li>
-<p>Windows:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>.<span class="se">\v</span>env<span class="se">\S</span>cripts<span class="se">\a</span>ctivate
-</span></code></pre></div>
-</li>
-<li>
-<p>Linux/MacOS:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">source</span><span class="w"> </span>venv/bin/activate
-</span></code></pre></div>
-</li>
-<li>
-<p>Verifique que o ambiente está ativo (deve aparecer <code>(venv)</code> no início da linha do terminal)</p>
-</li>
-</ol>
-<h2 id="passo-2-instalar-django-e-dependencias">Passo 2: Instalar Django e Dependências</h2>
-<ol>
-<li>Com o ambiente virtual ativo, instale o Django:</li>
-</ol>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>pip<span class="w"> </span>install<span class="w"> </span>django
-</span></code></pre></div>
-<h2 id="passo-3-criar-projeto-django">Passo 3: Criar Projeto Django</h2>
-<ol>
-<li>Crie o projeto Django:</li>
-</ol>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>django-admin<span class="w"> </span>startproject<span class="w"> </span>myproject<span class="w"> </span>.
-</span></code></pre></div>
-<p>(O ponto no final cria o projeto no diretório atual)</p>
-<ol>
-<li>Verifique a estrutura criada:</li>
-</ol>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>myproject/
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>  __init__.py
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>  settings.py
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>  urls.py
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>  wsgi.py
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>manage.py
-</span></code></pre></div>
-<h2 id="passo-4-configurar-o-banco-de-dados-sqlite">Passo 4: Configurar o Banco de Dados SQLite</h2>
-<ol>
-<li>O Django já vem configurado para usar SQLite por padrão (verifique em <code>myproject/settings.py</code>):</li>
-</ol>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">DATABASES</span> <span class="o">=</span> <span class="p">{</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>    <span class="s1">&#39;default&#39;</span><span class="p">:</span> <span class="p">{</span>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>        <span class="s1">&#39;ENGINE&#39;</span><span class="p">:</span> <span class="s1">&#39;django.db.backends.sqlite3&#39;</span><span class="p">,</span>
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>        <span class="s1">&#39;NAME&#39;</span><span class="p">:</span> <span class="n">BASE_DIR</span> <span class="o">/</span> <span class="s1">&#39;db.sqlite3&#39;</span><span class="p">,</span>
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>    <span class="p">}</span>
-</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="p">}</span>
-</span></code></pre></div>
-<ol>
-<li>Execute as migrações iniciais:</li>
-</ol>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>python<span class="w"> </span>manage.py<span class="w"> </span>migrate
-</span></code></pre></div>
-<h2 id="passo-5-criar-uma-aplicacao-django">Passo 5: Criar uma Aplicação Django</h2>
-<ol>
-<li>Crie uma nova aplicação:</li>
-</ol>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>python<span class="w"> </span>manage.py<span class="w"> </span>startapp<span class="w"> </span>myapp
-</span></code></pre></div>
-<ol>
-<li>Adicione a aplicação ao <code>INSTALLED_APPS</code> em <code>myproject/settings.py</code>:</li>
-</ol>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="p">[</span>
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>    <span class="o">...</span>
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>    <span class="s1">&#39;myapp&#39;</span><span class="p">,</span>
-</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="p">]</span>
-</span></code></pre></div>
-<h2 id="passo-6-configurar-urls-e-views-basicas">Passo 6: Configurar URLs e Views Básicas</h2>
-<ol>
-<li>Crie um arquivo <code>urls.py</code> na pasta <code>myapp</code>:</li>
-</ol>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">django.urls</span><span class="w"> </span><span class="kn">import</span> <span class="n">path</span>
-</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">.</span><span class="w"> </span><span class="kn">import</span> <span class="n">views</span>
-</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>
-</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
-</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">views</span><span class="o">.</span><span class="n">home</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;home&#39;</span><span class="p">),</span>
-</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="p">]</span>
-</span></code></pre></div>
-<ol>
-<li>Inclua as URLs da aplicação no projeto principal (<code>myproject/urls.py</code>):</li>
-</ol>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">django.contrib</span><span class="w"> </span><span class="kn">import</span> <span class="n">admin</span>
-</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">django.urls</span><span class="w"> </span><span class="kn">import</span> <span class="n">path</span><span class="p">,</span> <span class="n">include</span>
-</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>
-</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
-</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;admin/&#39;</span><span class="p">,</span> <span class="n">admin</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">urls</span><span class="p">),</span>
-</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="s1">&#39;myapp.urls&#39;</span><span class="p">)),</span>
-</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="p">]</span>
-</span></code></pre></div>
-<ol>
-<li>Crie uma view básica em <code>myapp/views.py</code>:</li>
-</ol>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">django.shortcuts</span><span class="w"> </span><span class="kn">import</span> <span class="n">render</span>
-</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">django.http</span><span class="w"> </span><span class="kn">import</span> <span class="n">HttpResponse</span>
-</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>
-</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">home</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
-</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>    <span class="k">return</span> <span class="n">HttpResponse</span><span class="p">(</span><span class="s2">&quot;Bem-vindo ao meu site!&quot;</span><span class="p">)</span>
-</span></code></pre></div>
-<h2 id="passo-7-criar-modelos-e-migracoes">Passo 7: Criar Modelos e Migrações</h2>
-<ol>
-<li>Defina um modelo em <code>myapp/models.py</code>:</li>
-</ol>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">django.db</span><span class="w"> </span><span class="kn">import</span> <span class="n">models</span>
-</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
-</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="k">class</span><span class="w"> </span><span class="nc">Produto</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
-</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>    <span class="n">nome</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
-</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>    <span class="n">preco</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">DecimalField</span><span class="p">(</span><span class="n">max_digits</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">decimal_places</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>    <span class="n">descricao</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">TextField</span><span class="p">()</span>
-</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>    <span class="n">disponivel</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">BooleanField</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>
-</span><span id="__span-14-9"><a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="__span-14-10"><a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">nome</span>
-</span></code></pre></div>
-<ol>
-<li>Crie e aplique as migrações:</li>
-</ol>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>python<span class="w"> </span>manage.py<span class="w"> </span>makemigrations
-</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>python<span class="w"> </span>manage.py<span class="w"> </span>migrate
-</span></code></pre></div>
-<h2 id="passo-8-configurar-o-painel-de-administracao">Passo 8: Configurar o Painel de Administração</h2>
-<ol>
-<li>Crie um superusuário:</li>
-</ol>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>python<span class="w"> </span>manage.py<span class="w"> </span>createsuperuser
-</span></code></pre></div>
-<ol>
-<li>Registre o modelo no admin (<code>myapp/admin.py</code>):</li>
-</ol>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">django.contrib</span><span class="w"> </span><span class="kn">import</span> <span class="n">admin</span>
-</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">.models</span><span class="w"> </span><span class="kn">import</span> <span class="n">Produto</span>
-</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>
-</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="n">admin</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">Produto</span><span class="p">)</span>
-</span></code></pre></div>
-<h2 id="passo-9-executar-o-servidor-de-desenvolvimento">Passo 9: Executar o Servidor de Desenvolvimento</h2>
-<ol>
-<li>Inicie o servidor:</li>
-</ol>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>python<span class="w"> </span>manage.py<span class="w"> </span>runserver
-</span></code></pre></div>
-<ol>
-<li>
-<p>Acesse no navegador:</p>
-</li>
-<li>
-<p>http://localhost:8000/ (página inicial)</p>
-</li>
-<li>http://localhost:8000/admin/ (painel admin)</li>
-</ol>
 
 
 
@@ -2528,7 +2728,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Rodapé" >
         
           
-          <a href="../Intro%20Django%20Rest/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Introdução ao Django REST">
+          <a href="../01_Intro/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Introdução ao Django">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2538,20 +2738,20 @@
                 Anterior
               </span>
               <div class="md-ellipsis">
-                Introdução ao Django REST
+                Introdução ao Django
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../Poo/Procedural%20x%20Poo/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Procedural x Poo">
+          <a href="../03_Consume/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Acessando a API do Django REST Framework">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Próximo
               </span>
               <div class="md-ellipsis">
-                Procedural x Poo
+                Acessando a API do Django REST Framework
               </div>
             </div>
             <div class="md-footer__button md-icon">
