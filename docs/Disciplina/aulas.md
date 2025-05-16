@@ -19,8 +19,8 @@
 | __15__ - 30/05/25     | :material-check: App |
 | __16__ - 06/06/25     | :material-check: App |
 | __17__ - 13/06/25     | :material-check: AP2 - Apresentação Projeto |
-| __17__ - 20/06/25     | :material-check: Feriado |
-| __17__ - 27/06/25     | :material-check: AS |
+| __18__ - 20/06/25     | :material-check: Feriado |
+| __19__ - 27/06/25     | :material-check: AS |
 <!--
 | __02__ - 21/08/24     | :material-check: Processo de Desenvolvimento -[Do Cascata ao Ágil](../assets/Aulas/CascataAoAgil.docx)  |
 | __03__ - 15/08/24     |  |
