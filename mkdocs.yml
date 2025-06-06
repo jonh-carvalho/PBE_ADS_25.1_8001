@@ -4,7 +4,8 @@ repo_url: https://github.com/jonh-carvalho/PBE_ADS_25.1_8001
 theme:
   name: material
   palette:
-    primary: magenta
+    primary: indigo
+    accent: indigo
   color_mode: dark
   locale: pt_BR
   language: pt-BR
@@ -19,9 +20,21 @@ theme:
     - navigation.top
     - navigation.instant
     - navigation.instant.progress
+
     - content.code.copy
     - content.code.select
     - content.code.annotate 
+    - content.code.highlight
+    - content.code.tabs
+    - content.code.expand
+    - content.code.extra
+    - content.code.include
+    - content.code.include.source
+    - content.code.include.requirejs
+    - content.code.include.jupyter
+    - content.code.include.jupyter.execute  
+    - content.code.include.jupyter.requirejs
+    - content.code.include.jupyter.source 
 
 plugins:
   - search

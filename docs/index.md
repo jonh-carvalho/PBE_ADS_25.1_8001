@@ -13,7 +13,7 @@ Censo Demográfico Ilha Primeira (AMIP - Associação de Moradores da Ilha Prime
 
     Jeronimo Chiclana, Julia Siodaro, Pedro de Castro Kurtz,
 
-    [:octicons-arrow-right-24: Repositório](https://github.com/Projetos-de-Extensao/PBE_ADS_25.1_8001_I)
+    [:octicons-arrow-right-32: Repositório](https://github.com/Projetos-de-Extensao/PBE_ADS_25.1_8001_I)
 
 -   :material-github:{ .lg .middle } __PBE_25.1_ADS_8001_II__
 
@@ -21,7 +21,8 @@ Censo Demográfico Ilha Primeira (AMIP - Associação de Moradores da Ilha Prime
 
     Gabriel Perrota, Guilherme Maranhão. Pedro Caravellos, Thiago Neves
 
-    [:octicons-arrow-right-24: Repositório](https://github.com/Projetos-de-Extensao/PBE_ADS_25.1_8001_II)
+    [:octicons-file-directory-24: Repositório](https://github.com/Projetos-de-Extensao/PBE_ADS_25.1_8001_II)
+
 
 </div>
 
