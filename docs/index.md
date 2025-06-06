@@ -23,7 +23,6 @@ Censo Demográfico Ilha Primeira (AMIP - Associação de Moradores da Ilha Prime
 
     [:octicons-arrow-right-24: Repositório](https://github.com/Projetos-de-Extensao/PBE_ADS_25.1_8001_II)
 
-
 </div>
 
 #### []()
